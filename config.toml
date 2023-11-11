@@ -1,0 +1,62 @@
+baseurl = "https://yuanj.top"
+title = "猫四叔"
+languageCode = "en-us"
+paginate = "10" # Number of posts per page
+theme = ["hugo-search-fuse-js", "Mainroad"]
+[Params.style.vars]
+  highlightColor = "#a3b8cc"
+[Author]
+  name = "YuanJ"
+  bio = "思绪来得快去得也快，偶尔会在这里停留"
+  avatar = "images/avatar.png"
+
+[Params]
+  description = "思绪来得快去得也快，偶尔会在这里停留" # Description of your site
+  opengraph = true
+  readmore = true # Show "Read more" button in list if true
+  pager = true
+  post_meta = ["date"] # Order of post meta information
+  mainSections = ["posts"]
+
+[Params.logo]
+  subtitle = "思绪来得快去得也快，偶尔会在这里停留" # Logo subtitle
+
+[Params.sidebar]
+  home = "right"   # Configure layout for home page
+  list = "right"   # Configure layout for list pages
+  single = false # Configure layout for single pages
+  widgets = ["misc", "taglist", "recent", "busuanzi"]
+
+[Params.widgets]
+  recent_num = 11
+  tags_counter = true
+  [[Params.widgets.misc.custom]]
+    title = "留言本"
+    url = "/gestbook"
+  [[Params.widgets.misc.custom]]
+    title = "相册"
+    url = "/gallery"
+  [[Params.widgets.misc.custom]]
+    title = "搜索"
+    url = "/search"
+  [[Params.widgets.misc.custom]]
+    title = "友链"
+    url = "/links"
+  [[Params.widgets.misc.custom]]
+    title = "公众号"
+    url = "/images/wechat.jpg"
+  [[Params.widgets.misc.custom]]
+    title = "E-mail"
+    url = "/images/email.png"
+  [[Params.widgets.misc.custom]]
+    title = "GitHub"
+    url = "https://github.com/UncleCAT4"
+  [[Params.widgets.misc.custom]]
+    title = "RSS"
+    url = "/index.xml"
+
+[markup]
+  defaultMarkdownHandler = "goldmark"
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

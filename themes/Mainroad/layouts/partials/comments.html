@@ -1,0 +1,13 @@
+{{ if eq .Section "posts" }}
+<div class="comments">
+  <p>COMMENTS</p>
+</div>
+<div id="cusdis_thread"
+  data-host="https://cusdis.com"
+  data-app-id="3b34877a-34f0-4b03-a5f9-8ca25231e4cd"
+  data-page-id="{{ .Title }}"
+  data-page-url="{{ .Permalink }}"
+  data-page-title="{{ .Title }}"
+></div>
+<script async defer src="/js/cusdis.es.js"></script>
+{{ end }}
