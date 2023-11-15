@@ -89,10 +89,10 @@ gmx genion -s ions.tpr -o YdcW_C284S_solv_ions.gro -p topol.top -pname NA -nname
 
 ## 体系能量最小化
 
-生产能量最小化的拓扑文件：
+生成能量最小化的拓扑文件：
 
 ```bash
-gmx grompp -f minim.mdp -c YdcW_C284S_solv.gro -p topol.top -o em.tpr
+gmx grompp -f minim.mdp -c YdcW_C284S_solv_ions.gro -p topol.top -o em.tpr
 ```
 
 执行能量最小化：
