@@ -5,7 +5,7 @@ paginate = "10" # Number of posts per page
 theme = ["hugo-search-fuse-js", "Mainroad"]
 [Params.style.vars]
   highlightColor = "#a3b8cc"
-[Author]
+[Name]
   name = "YuanJ"
   bio = "思绪来得快去得也快，偶尔会在这里停留"
   avatar = "images/avatar.png"
