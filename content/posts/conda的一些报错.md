@@ -218,7 +218,7 @@ During startup - Warning messages:
 2: package 『stats』 in options ( "defaultPackages" ) was not found
 ```
 
-这时才发现，是系统中缺少 `base-devel` 包，安装后即解决问题，DEseq2 也可以正常安装了。
+这时才发现，是 Arch 中缺少 `base-devel` 包，Debian 系中是`build-essential`，安装后即解决问题，DEseq2 也可以正常安装了。
 
 conda 安装的效率一直不高，找到一个工具 mamba 可以加速安装，切换到 base 环境安装：
 

@@ -27,6 +27,7 @@ title: 友链
 - [探人间](https://www.hydsb0.com)
 - [小 N 同学](https://www.imcharon.com)
 - [Adil](https://blog.adil.com.cn)
+- [samkallon](https://yuanj.top/)
 
 ##### Add me
 
