@@ -1,8 +1,9 @@
 ---
 title: Python 计算等效 A 声级
+tags:
+  - "Python"
+slug: b2m1h0n5
 date: 2023-09-13T21:24:56+08:00
-tags: [Python]
-slug: ar90trgsjkl
 ---
 
 利用 Python 计算国家环境噪声监测技术规范中的等效声级。

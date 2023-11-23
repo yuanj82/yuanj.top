@@ -1,11 +1,13 @@
 ---
 title: Linux 下安装 BUSCO
-tags: [Linux,生物信息学]
-slug: 24ed802
+tags:
+  - "Linux"
+  - "生物信息学"
+slug: t2v5e6j0
 date: 2023-07-21 17:22:17
 ---
 
-官网说 BUSCO 直接可以用 conda 安装，但... 我从来没有成功过，经过多次的实践，总结了能够成功安装 BUSCO 的方法...
+官网说 BUSCO 直接可以用 conda 安装，但。.. 我从来没有成功过，经过多次的实践，总结了能够成功安装 BUSCO 的方法。..
 
 <!--more-->
 

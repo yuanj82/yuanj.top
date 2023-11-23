@@ -1,8 +1,10 @@
 ---
 title: 最新版 HMMER 查找同源基因
+tags:
+  - "生物信息学"
+  - "HMMER"
+slug: t0d2x7f6
 date: 2023-10-10T19:40:49+08:00
-slug: hmmd234csda
-tags: [生物信息学,HMMER]
 ---
 
 pfam 数据库更新了，原有的下载 hmm 模型与种子文件的方法需要进行一些改变。

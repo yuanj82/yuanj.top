@@ -1,8 +1,9 @@
 ---
 title: Python 生成随机数例子
+tags:
+  - "Python"
+slug: a7n0j4j9
 date: 2023-09-12T12:35:51+08:00
-tags: [Python]
-slug: ad90adf
 ---
 
 最近在学习 Pyhotn，突然想到实验课作业里需要几百个噪音的数据，于是使用 Pyhton 生成随机数来模拟一下。

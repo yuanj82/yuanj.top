@@ -1,7 +1,9 @@
 ---
 title: Linux 下安装 conda
-tags: [Linux,Conda]
-slug: 1d0dd329
+tags:
+  - "Linux"
+  - "Conda"
+slug: z9w5y9m7
 date: 2023-05-01 22:59:01
 ---
 

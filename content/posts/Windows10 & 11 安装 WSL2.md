@@ -1,7 +1,8 @@
 ---
 title: Windows10 & 11 安装 WSL2
-tags: [Windows]
-slug: 309de741
+tags:
+  - "Windows"
+slug: y6w6f1s5
 date: 2023-05-20 14:05:25
 ---
 

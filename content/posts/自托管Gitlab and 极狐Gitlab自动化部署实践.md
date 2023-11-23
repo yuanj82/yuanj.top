@@ -1,7 +1,8 @@
 ---
 title: 自托管 Gitlab and 极狐 Gitlab 自动化 CI/CD 实践
-tags: [Gitlab]
-slug: 56d5b593
+tags:
+  - "Gitlab"
+slug: t4c3c3c2
 date: 2023-06-25 16:21:54
 ---
 

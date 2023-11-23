@@ -1,8 +1,9 @@
 ---
 title: Vercel 部署 hugo 版本过低的问题
+tags:
+  - "Vercel"
+slug: j5n0e5s0
 date: 2023-08-19T08:16:21+08:00
-slug: 54fd65g4fd
-tags: [Vercel]
 ---
 
 今天使用 Vercel 部署 hugo 博客，结果报错。

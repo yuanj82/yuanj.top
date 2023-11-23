@@ -1,8 +1,9 @@
 ---
 title: Arch 清除缓存及无用包
+tags:
+  - "Linux"
+slug: o1r3l6y0
 date: 2023-11-15T19:53:29+08:00
-slug: d84njd823b
-tags: [Linux]
 ---
 
 使用 Arch 时间长了，难免会产生一些无用包或者缓存，记录一些清理相关垃圾命令。

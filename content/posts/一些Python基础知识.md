@@ -1,8 +1,9 @@
 ---
 title: 一些 Python 基础知识
+tags:
+  - "Python"
+slug: d2d8f2a1
 date: 2023-08-31T21:29:55+08:00
-tags: [Python]
-slug: pyd23ds
 ---
 
 整理一些学习 Python 过程中遇到的一些知识。

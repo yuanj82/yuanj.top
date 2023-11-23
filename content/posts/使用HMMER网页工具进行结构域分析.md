@@ -1,8 +1,10 @@
 ---
 title: 使用 HMMER 网页工具进行结构域分析
-date: 2023-10-11T17:17:52+08:00
+tags:
+  - "生物信息学"
+  - "HMMER"
 slug: asdh8723ko23
-tags: [生物信息学,HMMER]
+date: 2023-10-11T17:17:52+08:00
 ---
 
 由于数据库之间的差异，使用 [NCBI CDD Search](https://www.ncbi.nlm.nih.gov/Structure/bwrpsb/bwrpsb.cgi) 搜索结构域有时候并不能满足我们的需要，比如我们通常使用 HMMER 来鉴定同一家族的基因并且需要进行结构域可视化，但 HMMER 所使用的数据都来自 [pfam](http://pfam-legacy.xfam.org/)，它的数据库可能与 NCBI 的不同，因此而造成结果上的差异，有的时候这种情况会影响我们后面的研究，于是，使用 [hmmer 网页工具](https://www.ebi.ac.uk/Tools/hmmer/) 来进行结构域分析可能会更好。

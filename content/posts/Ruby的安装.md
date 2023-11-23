@@ -1,8 +1,10 @@
 ---
 title: Ruby 的安装
+tags:
+  - "Ruby"
+  - "Linux"
+slug: j6d3g7l9
 date: 2023-09-05T18:51:46+08:00
-tags: [Ruby,Linux]
-slug: oar34fdgs
 ---
 
 不得不说，Ruby 的安装实在坑太多，Debian 上安装了老半天才成功，记录一下安装过程，安装的是 3.2.2 版本。

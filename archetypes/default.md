@@ -1,6 +1,8 @@
 ---
 title: {{ replace .File.ContentBaseName "-" " " | title }}
-date: {{ .Date }}
+tags:
+  - "TAG1"
+  - "TAG2"
 slug: 
-tags: []
+date: {{ .Date }}
 ---

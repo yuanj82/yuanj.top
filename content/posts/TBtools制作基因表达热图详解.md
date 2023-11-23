@@ -1,7 +1,9 @@
 ---
 title: TBtools 制作基因表达热图详解
-tags: [生物信息学,TBtools,热图]
-slug: 81ccbfae
+tags:
+  - "生物信息学"
+  - "TBtools"
+slug: p5x7e7k5
 date: 2023-06-23 12:07:50
 ---
 

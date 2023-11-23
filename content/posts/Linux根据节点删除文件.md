@@ -1,8 +1,9 @@
 ---
 title: Linux 使用 inode(i 节点号）删除文件
+tags:
+  - "Linux"
+slug: s1q5i2e8
 date: 2023-09-05T08:10:24+08:00
-slug: dsjkf82md
-tags: [Linux]
 ---
 
 今天用超算的时候发生一个错误，从 NCBI 上下载的数据格式有问题，解压出来的文件不对劲，而且解压出来一些乱码文件，rm 删不掉，最后使用节点删除的办法解决问题。

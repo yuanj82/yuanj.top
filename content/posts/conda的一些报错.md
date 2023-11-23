@@ -1,8 +1,10 @@
 ---
 title: Conda 的一些报错
+tags:
+  - "Linux"
+  - "Conda"
+slug: m5g2e4c0
 date: 2023-11-08T16:56:08+08:00
-slug: d74gf95jf8
-tags: [Linux,Conda]
 ---
 
 昨天重装了系统，WSL 也重装了一下，之前我使用 R 的时候是通过 conda 来管理环境的，R 包夜通过 conda 来安装，但是今天安装 R 包时出现一些问题。
