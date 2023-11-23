@@ -34,7 +34,7 @@ title: 履历
 - **2022.12-Now** 成都理工大学黄进课题组成员
 - **2023.01-2023.05** 全国大学生市场调查与分析大赛/国三
 - **2023.01-2023.05** 全国大学生电子商务“创新、创意及创业”挑战赛/省二
-- **2023.01-Now** 搭建并运营博客 [“UncleCAT4”](https://yuanj.top)
+- **2023.01-Now** 搭建并运营博客 [“猫四叔”](https://yuanj.top)
 - **2023.04-Now** 搭建并运营 [“黄进课题组”](https://www.huangjin-lab.cn/) 主页
 
 #### GitHub
@@ -42,8 +42,5 @@ title: 履历
 <img src="http://ghchart.rshah.org/UncleCAT4" style="width:700px;border:10px solid rgba(255, 255, 255, 0);" align="center"/>
 
 - [HJLab](https://github.com/UncleCAT4/HJlab): 黄进课题组主页
-- [Gene-family-identification](https://github.com/UncleCAT4/Gene-family-identification): 基因家族鉴定教程
 - [auto-hmmer](https://github.com/UncleCAT4/auto-hmmer): 自动化基因家族鉴定
-- [hexo-theme-hieroglyphs](https://github.com/UncleCAT4/hexo-theme-hieroglyphs): 极简 Hexo 主题
-- [resume](https://github.com/UncleCAT4/resume): 个人简历模板
 - [OStools](https://github.com/UncleCAT4/OStools)：简易的水稻基因工具箱
