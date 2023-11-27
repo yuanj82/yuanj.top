@@ -1,5 +1,5 @@
 {{ if eq .Section "posts" }}
-<div class="comments">
+<!-- <div class="comments">
   <p>COMMENTS</p>
 </div>
 <div id="cusdis_thread"
@@ -9,5 +9,20 @@
   data-page-url="{{ .Permalink }}"
   data-page-title="{{ .Title }}"
 ></div>
-<script async defer src="/js/cusdis.es.js"></script>
+<script async defer src="/js/cusdis.es.js"></script> -->
+<script src="https://giscus.app/client.js"
+        data-repo="UncleCAT4/UncleCAT4"
+        data-repo-id="R_kgDOKXKUsQ"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOKXKUsc4CZj38"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="0"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="preferred_color_scheme"
+        data-lang="zh-CN"
+        crossorigin="anonymous"
+        async>
+</script>
 {{ end }}
