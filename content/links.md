@@ -66,7 +66,7 @@ twikoo.init({
         data-repo-id="R_kgDOKXKUsQ"
         data-category="Announcements"
         data-category-id="DIC_kwDOKXKUsc4CZj38"
-        data-mapping="pathname"
+        data-mapping="title"
         data-strict="0"
         data-reactions-enabled="0"
         data-emit-metadata="0"
