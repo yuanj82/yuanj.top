@@ -34,9 +34,6 @@ theme = ["hugo-search-fuse-js", "Mainroad"]
     title = "留言本"
     url = "/gestbook"
   [[Params.widgets.misc.custom]]
-    title = "相册"
-    url = "/gallery"
-  [[Params.widgets.misc.custom]]
     title = "搜索"
     url = "/search"
   [[Params.widgets.misc.custom]]
