@@ -1,7 +1,7 @@
 ---
 title: Gromacs 分子动力学模拟
 tags:
-  - "gromacs"
+  - "分子动力学"
 slug: v5p7o4y0
 date: 2023-11-15T18:16:25+08:00
 ---
