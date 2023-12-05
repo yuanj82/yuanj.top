@@ -1,5 +1,5 @@
 baseurl = "https://yuanj.top"
-title = "猫四叔"
+title = "yuanj's blog"
 languageCode = "en-us"
 paginate = "10" # Number of posts per page
 theme = ["hugo-search-fuse-js", "Mainroad"]
