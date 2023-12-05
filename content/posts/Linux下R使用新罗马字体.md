@@ -60,7 +60,7 @@ font_families()
 使用 showtext 包在 R 中调用字体：
 
 ```r
-ibrary(showtext)
+library(showtext)
 font_add("Times_New_Roman", "/usr/share/fonts/truetype/msttcorefonts/Times_New_Roman.ttf")
 showtext_auto() # 始终启用字体
 ```
