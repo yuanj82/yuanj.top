@@ -28,6 +28,8 @@ title: 友链
 - [小 N 同学](https://www.imcharon.com)
 - [Adil](https://blog.adil.com.cn)
 - [samkallon](https://yuanj.top/)
+- [虹色轨迹🌠](https://dil.illlli.com)
+- [Stars Harbor's Blog](https://blog.starsharbor.com)
 
 ##### Add me
 
