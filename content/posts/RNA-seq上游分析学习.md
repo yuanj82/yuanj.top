@@ -1,8 +1,8 @@
 ---
 title: "专题：RNA-Seq 上游分析学习"
 tags:
-  - "转录组学"
-  - "生物信息学"
+  - "Transcriptomics"
+  - "Bioinformatics"
 slug: z6q5z7s5
 date: 2023-09-07T17:16:07+08:00
 ---

@@ -1,7 +1,7 @@
 ---
 title: 做了一个 presentasion 后的总结
 tags:
-  - "随笔"
+  - "Essay"
 slug: p8a8q8i1
 date: 2023-10-12T13:03:15+08:00
 ---

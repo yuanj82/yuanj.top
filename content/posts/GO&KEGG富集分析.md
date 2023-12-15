@@ -1,8 +1,8 @@
 ---
 title: GO&KEGG 富集分析
 tags:
-  - "生物信息学"
-  - "富集分析"
+  - "Bioinformatics"
+  - "Enrichment analysis"
 slug: e1a7g4y7
 date: 2023-05-13 17:49:08
 ---

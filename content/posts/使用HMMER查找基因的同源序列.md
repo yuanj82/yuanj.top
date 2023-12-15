@@ -1,7 +1,7 @@
 ---
 title: 使用 HMMER 查找基因的同源序列
 tags:
-  - "生物信息学"
+  - "Bioinformatics"
   - "HMMER"
 slug: de3b1544
 date: 2023-04-22 10:52:22

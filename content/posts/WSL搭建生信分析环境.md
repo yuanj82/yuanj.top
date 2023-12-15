@@ -3,7 +3,7 @@ title: WSL 搭建生信分析环境
 date: 2023-08-15T20:49:31+08:00
 tags:
   - "WSL"
-  - "生物信息学"
+  - "Bioinformatics"
 slug: jdksf7d9
 ---
 

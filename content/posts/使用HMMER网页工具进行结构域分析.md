@@ -1,7 +1,7 @@
 ---
 title: 使用 HMMER 网页工具进行结构域分析
 tags:
-  - "生物信息学"
+  - "Bioinformatics"
   - "HMMER"
 slug: asdh8723ko23
 date: 2023-10-11T17:17:52+08:00

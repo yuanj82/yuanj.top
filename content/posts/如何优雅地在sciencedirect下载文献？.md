@@ -1,7 +1,7 @@
 ---
 title: 如何优雅地在 sciencedirect 下载文献？
 tags:
-  - "论文期刊"
+  - "Publications"
 slug: scnredh8u
 date: 2023-09-20T17:12:12+08:00
 ---

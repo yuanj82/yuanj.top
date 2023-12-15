@@ -1,9 +1,9 @@
 ---
 title: 对人类基因进行 GO 富集分析
 tags:
-  - "生物信息学"
+  - "Bioinformatics"
   - "R"
-  - "富集分析"
+  - "Enrichment analysis"
 slug: j38df874h9
 date: 2023-11-08T17:16:08+08:00
 ---

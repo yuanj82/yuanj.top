@@ -1,7 +1,7 @@
 ---
 title: TBtools 快速完成基因功能注释
 tags:
-  - "生物信息学"
+  - "Bioinformatics"
   - "TBtools"
 slug: h8m5i4j2
 date: 2023-08-15T19:50:46+08:00

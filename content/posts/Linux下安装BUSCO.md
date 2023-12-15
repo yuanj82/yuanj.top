@@ -2,7 +2,7 @@
 title: Linux 下安装 BUSCO
 tags:
   - "Linux"
-  - "生物信息学"
+  - "Bioinformatics"
 slug: t2v5e6j0
 date: 2023-07-21 17:22:17
 ---
