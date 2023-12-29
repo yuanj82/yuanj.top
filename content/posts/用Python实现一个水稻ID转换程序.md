@@ -12,7 +12,7 @@ date: 2023-10-02T09:55:32+08:00
 
 ## 用法
 
-GitHub 仓库：[OStools](https://github.com/UncleCAT4/OStools) 还在不断更新中。
+GitHub 仓库：[OStools](https://github.com/yuanj82/OStools) 还在不断更新中。
 
 安装 Python 后，Windows 系统运行`start.exe`，Linux 系统运行`main.py`。
 
