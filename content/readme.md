@@ -19,7 +19,7 @@ title: README
 - [HJLab](https://github.com/yuanj82/HJlab): 黄进课题组主页
 - [auto-hmmer](https://github.com/yuanj82/auto-hmmer): 自动化基因家族鉴定
 - [OStools](https://github.com/yuanj82/OStools)：简易的水稻基因工具箱
-- [RNA-seq](https://github.com/YuanJ2003/RNA-seq)：RNA-seq 分析流程
+- [RNA-seq](https://github.com/yuanj82/RNA-seq)：RNA-seq 分析流程
 
 ## 你可以在这里留言
 
