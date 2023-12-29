@@ -14,7 +14,7 @@ title: README
 
 我的 GitHub：[https://github.com/yuanj82](https://github.com/yuanj82)
 
-<img src="http://ghchart.rshah.org/UncleCAT4" style="width:700px;border:10px solid rgba(255, 255, 255, 0);" align="center"/>
+<img src="http://ghchart.rshah.org/yuanj82" style="width:700px;border:10px solid rgba(255, 255, 255, 0);" align="center"/>
 
 - [HJLab](https://github.com/yuanj82/HJlab): 黄进课题组主页
 - [auto-hmmer](https://github.com/yuanj82/auto-hmmer): 自动化基因家族鉴定
