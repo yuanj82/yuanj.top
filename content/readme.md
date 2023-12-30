@@ -23,18 +23,10 @@ title: README
 
 ## 你可以在这里留言
 
-<script src="https://giscus.app/client.js"
-        data-repo="UncleCAT4/blog"
-        data-repo-id="R_kgDOKXKUsQ"
-        data-category="Announcements"
-        data-category-id="DIC_kwDOKXKUsc4CZj38"
-        data-mapping="title"
-        data-strict="0"
-        data-reactions-enabled="0"
-        data-emit-metadata="0"
-        data-input-position="bottom"
-        data-theme="preferred_color_scheme"
-        data-lang="en"
+<script src="https://utteranc.es/client.js"
+        repo="yuanj82/blog"
+        issue-term="title"
+        theme="github-light"
         crossorigin="anonymous"
         async>
 </script>
