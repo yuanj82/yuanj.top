@@ -13,7 +13,7 @@ date: 2023-09-08T20:29:36+08:00
 
 还是先从 NCBI 搜索数据，查看数据是双端测序的数据之后，多选条目，直接 Accession list
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/2023090820339.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/2023090820339.png)
 
 我使用的是下列数据
 
@@ -44,11 +44,11 @@ nohup fastq-dump --gzip --split-3 SRR*.sra
 
 这里千万不要在程序没有运行完成的时候就进行下一步操作，使用 top 可以查看后台进程
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/20230908204934.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230908204934.png)
 
 当程序运行完成后便可看到后台任务中已经没有前面运行的程序了
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/20230908205137.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230908205137.png)
 
 同一目录下的 nohup.out 文件中是后台进程的运行记录
 
@@ -143,8 +143,8 @@ fi
 
 个人习惯完成分析后把文件进行一下归类
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/20230908205327.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230908205327.png)
 
 最后将数据下载到本地进行下游分析
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/2023090820577.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/2023090820577.png)

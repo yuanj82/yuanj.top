@@ -23,11 +23,11 @@ date: 2023-05-13 17:49:08
 
 功能富集分析的算法有很多种，能够做功能富集分析的工具也非常多，如果大家想深入了解的话，下面是一个工具列表可供大家学习。
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/20230513205045.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230513205045.png)
 
 在以上所有的工具中，有一个工具是最为常用，也最为权威，那就是 DAVID，DAVID 是由美国 Leidos 生物医学研究公司的 LHRI 团队开发的一个在线基因注释及功能富集网站，其网址为 https://david.ncifcrf.gov 为什么说 DAVID 它是最权威的呢？看下图就知道了：仅 DAVID 这一个软件就发表了 10 篇 sci 文章，其中 5 分以上 7 篇，累计影响因子将近 85 分。其他用 DAVID 进行分析并发表的文章就更不计其数了
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/20230513205056.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230513205056.png)
 
 ## 获取富集数据
 
@@ -35,15 +35,15 @@ date: 2023-05-13 17:49:08
 
 点击上方功能菜单 Functional Annotation
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/20230513205109.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230513205109.png)
 
 选择上方的 upload 选项卡，在编辑框内粘贴基因 ID 列表，选 ID 类型为 ENSEMBL_GENE_ID  ，选择列表类型为基因列表，最后上传列表
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/20230513205121.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230513205121.png)
 
 现在展示出的即富集分析结果，取消勾选上方 Check Defaults 取消全选，展开 Gene_Ontology 项，勾选 BP、CC、MF 项，点击最下方 Functional Annotation Chart 将勾选的项目以列表形式给出
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/20230513205134.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230513205134.png)
 
 随后就会跳出一个浏览器页面，以列表的形式将上述结果展示给我们了，点击右上方 Doanload File 将新弹出窗口中的数据复制保存在 Excel 表格中，按顺序保留下列数据
 
@@ -69,17 +69,17 @@ GO 是 Gene Ontology 的缩写，是一种用于生物信息学和计算生物�
 
 在制作气泡图时，通常会对富集分析结果中的 P 值进行转换，以避免图像上 P 值的差异过分压缩的情况。常用的转换方式是将 P 值进行-log10（以对数值）的处理
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/20230513205147.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230513205147.png)
 
 对数据进行整理，简化一下名称，最终得到如下数据
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/20230513205159.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230513205159.png)
 
 ## 绘图
 
 打开微生信平台（http://www.bioinformatics.com.cn/）的富集气泡图功能进行绘图，也可以使用 R 和 Excel，R 的环境比较复杂，这里我就不放代码了。
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/20230513205208.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230513205208.png)
 
 ## 结果分析
 

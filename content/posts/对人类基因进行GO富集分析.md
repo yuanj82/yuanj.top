@@ -99,7 +99,7 @@ write.table (
 dotplot (enrich.go)
 ```
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/20231108173544.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20231108173544.png)
 
 clusterProfiler 包里的一些默认作图方法，例如：
 
@@ -170,4 +170,4 @@ plot
 ggsave ( plot, filename = "GO.png", width = 15, height = 9, dpi = 300 )
 ```
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/20231108173559.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20231108173559.png)

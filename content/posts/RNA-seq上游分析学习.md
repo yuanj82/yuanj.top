@@ -44,7 +44,7 @@ date: 2023-09-07T17:16:07+08:00
 
 RNA-seq 是研究转录组应用最广泛，也是最重要的技术之一，RNA-seq 分析内容包括序列比对、转录本拼接、表达定量、差异分析、融合基因检测、可变剪接、RNA 编辑和突变检测等，具体流程和常用工具如下图所示，通常的分析不一定需要走完全部流程，按需进行，某些步骤可以跳过、简化等。
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/20230907019612.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230907019612.png)
 
 RNA-seq 中最常用的分析方法就是找出差异表达基因 (Differential gene expression, DEG)，在实验室中，标准流程就分为三步：
 
@@ -77,7 +77,7 @@ RNA-seq 中最常用的分析方法就是找出差异表达基因 (Differential 
 
 ## 大致流程
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/20230907184128.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230907184128.png)
 
 ## 软件安装
 
@@ -118,15 +118,15 @@ conda install samtools=1.9
 
 先在 NCBI 的 SRA 数据库搜索感兴趣的物种
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/20230907183434.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230907183434.png)
 
 选择符合自己要求的文章，找到下面 Runs 这里，点击 SRR 开头的编号
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/20230907183745.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230907183745.png)
 
 查看数据是否符合要求
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/20230907183830.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230907183830.png)
 
 文件是***_1.fq.gz、***_2.fq.gz 这种是双端测序数据，我们需要这种双端测序的数据来进行 RNA-seq 分析
 
@@ -230,7 +230,7 @@ nohup fastqc SRR*.fastq.gz
 
 程序运行完成后会输出一堆 html 文件和 zip 压缩包，html 是网页版报告，zip 是本地宝报告，下载到本地用浏览器打开就可以看到质量检测报告了
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/2023090719614.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/2023090719614.png)
 
 左侧 Summary 部分就是整个报告的目录，整个报告分成若干个部分
 
@@ -248,7 +248,7 @@ nohup fastqc SRR*.fastq.gz
 
 **Basic Statistics**
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/20230907191139.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230907191139.png)
 
 每个位置的碱基的测序质量
 
@@ -259,7 +259,7 @@ nohup fastqc SRR*.fastq.gz
 
 **Per base sequence quality**
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/20230907191414.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230907191414.png)
 
 - 横轴代表位置（第 1 到 150 个碱基）
 - 纵轴代表 quality
@@ -274,7 +274,7 @@ nohup fastqc SRR*.fastq.gz
 
 **Per tile sequence quality**
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/20230907191547.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230907191547.png)
 
 每个 tile 测序的测序质量
 
@@ -286,7 +286,7 @@ nohup fastqc SRR*.fastq.gz
 
 **Per sequence quality scores**
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/20230907191735.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230907191735.png)
 
 每条序列质量得分的分布情况
 
@@ -299,7 +299,7 @@ nohup fastqc SRR*.fastq.gz
 
 **Per base sequence content**
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/20230907192429.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230907192429.png)
 
 统计 reads 每个位置 ATCG 四种碱基的分布
 
@@ -309,7 +309,7 @@ nohup fastqc SRR*.fastq.gz
 
 **Per sequence GC content**
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/20230907192546.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230907192546.png)
 
 序列平均 GC 含量分布
 
@@ -322,7 +322,7 @@ nohup fastqc SRR*.fastq.gz
 
 **Per base N content**
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/20230907192927.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230907192927.png)
 
 每个位置无法检测的值的比例，当测序仪无法确定是何种碱基时，用 N 表示
 
@@ -333,7 +333,7 @@ nohup fastqc SRR*.fastq.gz
 
 **Sequence Length Distribution**
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/20230907193220.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230907193220.png)
 
 序列测序长度分布
 
@@ -341,7 +341,7 @@ nohup fastqc SRR*.fastq.gz
 
 **Sequence Duplication Levels**
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/20230907193336.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230907193336.png)
 
 统计 reads 重复水平
 
@@ -356,13 +356,13 @@ fastqc 抽取 reads 文件前 200,000 条 reads 统计其重复情况，重复�
 
 **Overrepresented sequences**
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/20230907193916.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230907193916.png)
 
 过度重复出现的序列的统计信息，上图中没有
 
 **Adapter Content**
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/20230907193956.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230907193956.png)
 
 衡量的是序列中两端 adapter 的情况
 
@@ -468,7 +468,7 @@ hisat2 -x oryza_sativa/oryza_sativa -p 5 -1 trimmed_1P -2 trimmed_2P -S oryza_sa
 
 注意-x 后跟索引文件，不加拓展名，保证 ht2 文件和 fa 文件的文件名一致即可，这里由于前面过滤后的序列是没有拓展名的，所以会提示 Warning: Unsupported file format，不影响结果
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/2023090720952.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/2023090720952.png)
 
 运行完毕后便得到 sam 文件，还会输出一段信息
 
@@ -563,11 +563,11 @@ oryza_sativa.gff3 就是最初下载的注释文件，如果要统计多个文�
 
 gene_name.counts.summary 文件是计数统计情况
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/20230907202859.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230907202859.png)
 
 gene_name.counts 文件是基因的具体信息
 
-![](https://jihulab.com/UncleCAT4/static/-/raw/main/blog/20230907203131.png)
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230907203131.png)
 
 我这里只有一组数据，所以数量统计也只有一列，通常做 RNA-Seq 时是需要多组数据进行分析的
 
