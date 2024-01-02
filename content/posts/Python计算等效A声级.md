@@ -44,4 +44,4 @@ def L_number(order):
 
 从 data.txt 中导入 200 个数据进行计算，分别求得 L10、L50、L90，最后计算 Leq
 
-![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230913212744.png)
+![](https://gcore.jsdelivr.net/gh/yuanj82/static/blog/20230913212744.png)

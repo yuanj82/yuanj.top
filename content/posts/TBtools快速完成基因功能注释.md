@@ -17,27 +17,27 @@ date: 2023-08-15T19:50:46+08:00
 
 打开 [eggNOG-mapper 主页](http://eggnog-mapper.embl.de/) 上传序列文件并输入邮箱，参数一般就使用默认即可，一般使用蛋白质序列
 
-![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230815195806.png)
+![](https://gcore.jsdelivr.net/gh/yuanj82/static/blog/20230815195806.png)
 
 随后就可以看到右键提示
 
-![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230815195951.png)
+![](https://gcore.jsdelivr.net/gh/yuanj82/static/blog/20230815195951.png)
 
 点击 Click to manage your job，启动工作
 
-![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230815195951.png)
+![](https://gcore.jsdelivr.net/gh/yuanj82/static/blog/20230815195951.png)
 
 任务完成后，点击 Access your job files here 查看文件
 
-![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230815200537.png)
+![](https://gcore.jsdelivr.net/gh/yuanj82/static/blog/20230815200537.png)
 
 只需要下载 out.emapper.annotations 这个文件
 
-![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230815200618.png)
+![](https://gcore.jsdelivr.net/gh/yuanj82/static/blog/20230815200618.png)
 
 可以用 Excel 打开文件查看信息
 
-![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230815201154.png)
+![](https://gcore.jsdelivr.net/gh/yuanj82/static/blog/20230815201154.png)
 
 结果很全面，只是还是不能满足我们的需求
 
@@ -45,11 +45,11 @@ date: 2023-08-15T19:50:46+08:00
 
 接下来我们便使用 TBtools 的 eggNOG-mapper Helper 插件来整理结果
 
-![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230815200915.png)
+![](https://gcore.jsdelivr.net/gh/yuanj82/static/blog/20230815200915.png)
 
 很快就能完成，完成后就可以查看整理好的信息
 
-![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20230815201303.png)
+![](https://gcore.jsdelivr.net/gh/yuanj82/static/blog/20230815201303.png)
 
 输出文件中，大家可能最关注的有四个：
 

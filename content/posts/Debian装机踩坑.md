@@ -55,7 +55,7 @@ X 与 Wayland 的主要差异在于它们的图形系统架构。在 X 系统中
 
 试了一下 KDE，感觉不是很舒服，于是切换到 GNOME，感觉 GNOME 美化一下还是不错的~
 
-![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/202312291827075.png)
+![](https://gcore.jsdelivr.net/gh/yuanj82/static/blog/202312291827075.png)
 
 使用插件：
 
