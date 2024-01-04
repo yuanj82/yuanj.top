@@ -95,6 +95,9 @@ simple-scan
 gnome-games
 brasero*
 imagemagick*
+gnote
+gnome-font-viewer
+debian-reference 
 ```
 `sudo apt purge`卸载掉之后`sudo apt autoremove`清理一下依赖。
 
