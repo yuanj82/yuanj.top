@@ -15,7 +15,7 @@ date: 2023-12-29T18:08:05+08:00
 最初使用的是 KDE 环境的，根据官方的 Wiki，直接使用 non-free 源安装 Nvidia 显卡驱动：
 
 ```bash
-sudo apt install linux-headers-amd64 nvidia-driver firmware-misc-nonfree nvidia-cuda-dev nvidia-cuda-toolkit libvoptix1
+sudo apt install linux-headers-amd64 nvidia-driver firmware-misc-nonfree nvidia-cuda-dev nvidia-cuda-toolkit libnvoptix1
 ```
 
 重启后无法登入系统 ...
@@ -68,3 +68,9 @@ X 与 Wayland 的主要差异在于它们的图形系统架构。在 X 系统中
 [Dash to Dock](https://extensions.gnome.org/extension/307/dash-to-dock/) 更好用的 dock 栏
 
 主题忘了是什么了，后来图标换成了 [vimix-icon-theme](https://github.com/vinceliuice/vimix-icon-theme)，主题是 [vimix-gtk-themes](https://github.com/vinceliuice/vimix-gtk-themes)
+
+---
+
+**2023/01/04 更新**
+
+启用 non-free 源之后直接使用 apt 安装显卡驱动即可，效果更好！

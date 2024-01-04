@@ -30,16 +30,19 @@ date: 2024-01-02T12:59:49+08:00
 - Free Download Manager, 用于代替 IDM，毕竟浏览器自带的下载太鸡肋
 - Zotero, 用于替代 Endnote, 有开发者做了 deb 包，还不错，[GitHub 地址](https://github.com/retorquere/zotero-deb)
 - GIMP， 用于代替 PS
+- OBS studio， 屏幕录制
+- inscape, 代替 AI，矢量图制作
 - Kdenlive， 用于代替 PR
-- flameshot, 截图工具
+- flameshot, 截图工具，时间戳为`%Y%m%d%H%M%S`
 - envolution, 邮件客户端
 - gromacs GPU 版， 用于分子动力学模拟
 - mamba, 代替 conda, 速度快了不少，用于生物信息学软件安装
 - git, 不必多说
 - zsh, 比 bash 好用一些
 - neofetch, 查看系统信息
+- picgo-core, linux 下的图形版 picgo 不太好用
 - hugo， 博客框架
-- clash, 懂的都懂，Debian 没有管理开机程序的 GUI 软件，所以需要用 systemctl 设置开机自启，在`/etc/systemd/system/`目录新建 clash.service 文件，写入以下内容：
+- [clash](https://github.com/doreamon-design/clash), 懂的都懂，Debian GNOME 没有管理开机程序的 GUI 软件，所以需要用 systemctl 设置开机自启，在`/etc/systemd/system/`目录新建 clash.service 文件，写入以下内容：
 
 ```bash
 [Unit]
@@ -69,3 +72,30 @@ sudo systemctl enable clash.service
 不过有一说一，Debian 确实稳定，但是使用起来体验还是真的不如 POP_OS 这种经过优化的，后面考虑换到 POP_OS，Ubuntu 现在夹杂了太多私货，实在不敢恭维了 ...
 
 Linux 用起来实际上跟 Windows 差别以已经不时很大了，主要是使用习惯的问题，比如 fcitx5 切换输入法是快捷键 Ctrl+空格，而 Windows 是 Ctrl+Shift，还有文件系统也不一样，Linux 里一切皆文件，不管什么，改改配置文件就好，Linux 差的最大的就是软件生态了，不过目前看 ... 似乎暂时够用了，如果需要 Windows, 我还有一台笔记本～
+
+---
+
+**2024/01/04 更新**
+
+昨天换蓝牙驱动的时候不小心把 GNOME 桌面删掉了 ... 于是切换到 cinnamon 桌面环境，用上官方的 non-free 源，蓝牙驱动居然就好了！？我的台式电脑是外置 USB 插入的蓝牙设备，之前 ubuntu 上面就会经常卡顿，断断续续的，昨天用官方的源全面更新了一下之后居然很完美！！！没有丝毫问题，之前在 windows 的时候都会偶尔卡顿～
+
+更爱 debian 了！cinnamon 桌面唯独有问题的就是 wine 应用图标不显示和登录页面比较丑，但是这俩似乎不是很大的问题？还是可以调教的。字体换上了 ubuntu 的字体，很好看，终端字体是 windows 的 Consolas，很不错。
+
+![](https://cdn.jsdelivr.net/gh/yuanj82/static/blog/20240104105911.png)
+
+下面的软件是 GNOME 环境下可以卸掉的没用的软件：
+
+```bash
+transmission*
+goldendict
+pidgin
+kasumi
+hexchat*
+simple-scan
+gnome-games
+brasero*
+imagemagick*
+```
+`sudo apt purge`卸载掉之后`sudo apt autoremove`清理一下依赖。
+
+还有就是这输入法 ... fcitx5 中文输入法能够输入的标点符号少了很多，还需要再调教一下。
