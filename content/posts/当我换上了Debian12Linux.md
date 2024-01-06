@@ -20,6 +20,7 @@ date: 2024-01-02T12:59:49+08:00
 - Linux QQ，不得不说，腾讯这一个做的还是很不错的，和 Windows 下的新版 QQ 基本上一样了
 - 腾讯会议， 官网有 deb 包
 - wine 微信，有 UOS 适配的所谓原生微信，但是不管是功能还是体验，比 wine 差的太多，虽说 wine 也不咋地 ...
+- wine 企业微信，很难评
 - obsidian, 原生 deb 安装包安装，与 Windows 一样
 - VScode, 微软官方源安装，与 Windows 一样
 - fcitx5 输入法，调教一下还不错，搜狗输入法没有更新 Debian/Ubuntu 的新版，只能用这个，除了操作习惯不太一样之外其他面前够用，[fcitx5 词库](https://github.com/wuhgit/CustomPinyinDictionary)，[fcitx5 皮肤](https://github.com/sxqsfun/fcitx5-sogou-themes)
@@ -35,6 +36,7 @@ date: 2024-01-02T12:59:49+08:00
 - Kdenlive， 用于代替 PR
 - flameshot, 截图工具，时间戳为`%Y%m%d%H%M%S`
 - envolution, 邮件客户端
+- plank， 系统 dock 栏
 - gromacs GPU 版， 用于分子动力学模拟
 - mamba, 代替 conda, 速度快了不少，用于生物信息学软件安装
 - git, 不必多说
@@ -86,19 +88,14 @@ Linux 用起来实际上跟 Windows 差别以已经不时很大了，主要是�
 下面的软件是 GNOME 环境下可以卸掉的没用的软件：
 
 ```bash
-transmission*
-goldendict
-pidgin
-kasumi
-hexchat*
-simple-scan
-gnome-games
-brasero*
-imagemagick*
-gnote
-gnome-font-viewer
-debian-reference 
+sudo apt purge transmission* goldendict pidgin kasumi hexchat* simple-scan gnome-games brasero* imagemagick* gnote gnome-font-viewer debian-reference firefox* libreoffice* cheese* gnome-sound-recorder gnome-logs gnome-calculator gnome-characters gnome-online-accounts gnome-screenshot gnome-user-docs gnome-user-share xiterm+thai
 ```
 `sudo apt purge`卸载掉之后`sudo apt autoremove`清理一下依赖。
 
 还有就是这输入法 ... fcitx5 中文输入法能够输入的标点符号少了很多，还需要再调教一下。
+
+---
+
+**2024/01/06 更新**
+
+登陆界面可以使用 lightdm 的 lightdm-settings 来修改，直接使用 apt 安装，然后把背景图片放在`/usr/share/images/`下，打开程序菜单里的`Login Window`来进行修改，主题也在这里修改。
