@@ -88,7 +88,7 @@ Linux 用起来实际上跟 Windows 差别以已经不时很大了，主要是�
 下面的软件是 GNOME 环境下可以卸掉的没用的软件：
 
 ```bash
-sudo apt purge transmission* goldendict pidgin kasumi hexchat* simple-scan gnome-games brasero* imagemagick* gnote gnome-font-viewer debian-reference firefox* libreoffice* cheese* gnome-sound-recorder gnome-logs gnome-calculator gnome-characters gnome-online-accounts gnome-screenshot gnome-user-docs gnome-user-share xiterm+thai
+sudo apt purge transmission* goldendict pidgin kasumi hexchat* simple-scan gnome-games brasero* imagemagick* gnote gnome-font-viewer debian-reference* firefox* libreoffice* cheese* gnome-sound-recorder gnome-logs gnome-calculator gnome-characters gnome-online-accounts gnome-screenshot gnome-user-docs gnome-user-share xiterm+thai mozc* remmina shotwell galculator gimp-help*
 ```
 `sudo apt purge`卸载掉之后`sudo apt autoremove`清理一下依赖。
 

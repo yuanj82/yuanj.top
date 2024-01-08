@@ -57,14 +57,15 @@ sudo apt install fcitx5-rime
 
 ```bash
 sudo apt install ruby
-
 ```
 
 然后直接克隆仓库运行脚本即可，运行完之后在在 rime 输入法那里点一下`deploy`即可。
 
 ```bash
-git clone https://github.com/Mark24Code/rime-auto-deploy
+git clone --depth=1 https://github.com/Mark24Code/rime-auto-deploy.git --branch latest
 cd rime-auto-deploy
 
 ./installer.rb
 ```
+
+实测 Debian12 上面 rime 的皮肤不生效，但是可以直接用 fcitx5 的皮肤 [fcitx5-themes](https://github.com/thep0y/fcitx5-themes)。此外，前面自动化脚本会启用模糊音，但是对于我来说明显是有点多此一举，删除配置目录下的`rime_ice.custom.yaml`重新部署即可。
