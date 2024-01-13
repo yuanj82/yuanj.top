@@ -30,6 +30,7 @@ title: 友链
 - [samkallon](https://yuanj.top/)
 - [虹色轨迹🌠](https://dil.illlli.com)
 - [Stars Harbor's Blog](https://blog.starsharbor.com)
+- [博友圈](https://www.boyouquan.com/home)
 
 ##### Add me
 
