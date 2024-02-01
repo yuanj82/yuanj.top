@@ -37,3 +37,9 @@ sudo make install
 ```
 
 也没什么需要注意的，只要把依赖都装好了，后面的都是很顺其自然的。
+
+---
+
+**2024/02/01 更新**
+
+安装 Rstudio 后发现不能正常使用，报错`error while loading shared libraries: libR.so: cannot open shared object file: No such file or directory`，经过大佬指点，将编译过程中的`./configure`换成`./configure --enable-R-shlib`即可。
