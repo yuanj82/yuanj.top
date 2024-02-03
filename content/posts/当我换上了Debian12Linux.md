@@ -99,3 +99,31 @@ sudo apt purge transmission* goldendict pidgin kasumi hexchat* simple-scan gnome
 **2024/01/06 更新**
 
 登陆界面可以使用 lightdm 的 lightdm-settings 来修改，直接使用 apt 安装，然后把背景图片放在`/usr/share/images/`下，打开程序菜单里的`Login Window`来进行修改，主题也在这里修改。
+
+**2024/02/03 更新**
+
+笔记本上用 LMDE 更友好一些~
+
+卸载无用软件：
+
+```bash
+sudo apt purge sticky hexchat* redshift-gtk thunderbird* firefox* libreoffice-* simple-scan hypnotix webapp-manager onboard* warpinator thingy
+```
+
+解决蓝牙耳机无法自动连接：
+
+```bash
+git clone https://github.com/jrouleau/bluetooth-autoconnect.git
+sudo cp bluetooth-autoconnect/bluetooth-autoconnect.service /etc/systemd/system/
+sudo cp bluetooth-autoconnect/bluetooth-autoconnect /usr/bin/
+sudo systemctl enable bluetooth-autoconnect.service 
+sudo systemctl start bluetooth-autoconnect.service
+sudo cp bluetooth-autoconnect/pulseaudio-bluetooth-autoconnect.service /etc/systemd/user/
+systemctl --user enable pulseaudio-bluetooth-autoconnect
+```
+
+解决部分应用（WPS）无法显示鼠标光标主题样式：
+
+```bash
+sudo update-alternatives --config x-cursor-theme
+```
