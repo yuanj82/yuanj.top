@@ -1,6 +1,8 @@
 ---
-title: Discussions
+title: Natter
 ---
+
+在这里写一些乱七八糟的东西。
 
 <script src="https://giscus.app/client.js"
         data-repo="yuanj82/blog"

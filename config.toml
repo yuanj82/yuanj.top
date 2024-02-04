@@ -38,8 +38,8 @@ theme = ["hugo-search-fuse-js", "Mainroad"]
     title = "Projects"
     url = "/projects"
 [[Params.widgets.misc.custom]]
-    title = "Discussions"
-    url = "/discussions"
+    title = "Natter"
+    url = "/natter"
   [[Params.widgets.misc.custom]]
     title = "搜索"
     url = "/search"
