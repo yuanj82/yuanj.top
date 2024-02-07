@@ -10,7 +10,7 @@ title: Natter
         data-category="Announcements"
         data-category-id="DIC_kwDOKXKUsc4CZj38"
         data-mapping="specific"
-        data-term="Discussions"
+        data-term="Natter"
         data-strict="0"
         data-reactions-enabled="0"
         data-emit-metadata="0"
