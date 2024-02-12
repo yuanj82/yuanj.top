@@ -107,7 +107,7 @@ sudo apt purge transmission* goldendict pidgin kasumi hexchat* simple-scan gnome
 卸载无用软件：
 
 ```bash
-sudo apt purge sticky hexchat* redshift-gtk firefox* libreoffice-* simple-scan hypnotix webapp-manager onboard* warpinator thingy mint-l-theme mint-themes
+sudo apt purge sticky hexchat* redshift-gtk firefox* libreoffice-* simple-scan hypnotix webapp-manager onboard* warpinator thingy mint-l-theme mint-themes gnome-icon-theme papirus-icon-theme mint-y-icons mint-l-icons mint-x-icons numix-icon-theme
 ```
 
 解决蓝牙耳机无法自动连接：
