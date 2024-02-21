@@ -2,7 +2,7 @@ baseurl = "https://yuanj.top"
 title = "yuanj's blog"
 languageCode = "en-us"
 paginate = "10" # Number of posts per page
-theme = ["hugo-search-fuse-js", "Mainroad"]
+theme = ["hugo-search-fuse-js", "cloud"]
 [Params.style.vars]
   highlightColor = "#a3b8cc"
 [Name]
@@ -34,10 +34,10 @@ theme = ["hugo-search-fuse-js", "Mainroad"]
   [[Params.widgets.misc.custom]]
     title = "README"
     url = "/readme"
-[[Params.widgets.misc.custom]]
+  [[Params.widgets.misc.custom]]
     title = "Projects"
     url = "/projects"
-[[Params.widgets.misc.custom]]
+  [[Params.widgets.misc.custom]]
     title = "Natter"
     url = "/natter"
   [[Params.widgets.misc.custom]]
