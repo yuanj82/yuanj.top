@@ -27,10 +27,25 @@ Wu L, Wang R, Li M, Du Z, Jin Y, Shi Y, Jiang W, Chen J, **Jiao Y**, Hu B, Huang
 
 ## 你可以在这里留言
 
-<script src="https://utteranc.es/client.js"
+<!-- <script src="https://utteranc.es/client.js"
         repo="yuanj82/blog"
         issue-term="title"
         theme="github-light"
+        crossorigin="anonymous"
+        async>
+</script> -->
+<script src="https://giscus.app/client.js"
+        data-repo="yuanj82/blog"
+        data-repo-id="R_kgDOKXKUsQ"
+        data-category="Announcements"
+        data-category-id="DIC_kwDOKXKUsc4CZj38"
+        data-mapping="title"
+        data-strict="0"
+        data-reactions-enabled="0"
+        data-emit-metadata="0"
+        data-input-position="bottom"
+        data-theme="light"
+        data-lang="en"
         crossorigin="anonymous"
         async>
 </script>
