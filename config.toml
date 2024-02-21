@@ -1,37 +1,27 @@
 baseurl = "https://yuanj.top"
 title = "yuanj's blog"
 languageCode = "en-us"
-paginate = "10" # Number of posts per page
+paginate = "10"                          # 每页的文章数量
 theme = ["hugo-search-fuse-js", "cloud"]
 [Params.style.vars]
-  highlightColor = "#a3b8cc"
-[Name]
-  name = "YuanJ"
-  bio = "思绪来得快去得也快，偶尔会在这里停留"
-  avatar = "images/avatar.png"
+  highlightColor = "     #a3b8cc"        # 主题色
 
 [Params]
-  description = "思绪来得快去得也快，偶尔会在这里停留" # Description of your site
-  opengraph = true
-  readmore = true # Show "Read more" button in list if true
-  pager = true
-  post_meta = ["date"] # Order of post meta information
-  mainSections = ["posts"]
+  post_meta = ["date"]
+  mainSections = ["posts"]                           # 设定文章目录
   mathjax = true
 
-[Params.logo]
-  subtitle = "思绪来得快去得也快，偶尔会在这里停留" # Logo subtitle
+[Params.topbar]
+  subtitle = "思绪来得快去得也快，偶尔会在这里停留"     # 顶栏副标题
 
 [Params.sidebar]
-  home = "right"   # Configure layout for home page
-  list = "right"   # Configure layout for list pages
-  single = false # Configure layout for single pages
-  widgets = ["misc", "taglist", "recent","busuanzi"]
+  home = "right"                                         # 侧栏的位置
+  widgets = ["misc", "taglist", "recent","busuanzi"]     # 侧栏要显示的项目
 
 [Params.widgets]
-  recent_num = 11
-  tags_counter = true
-  [[Params.widgets.misc.custom]]
+  recent_num = 11                 # 设定RECENT POSTS栏的文章数量
+  tags_counter = true             # 是否显示tags的文章数量
+  [[Params.widgets.misc.custom]]  # MISC栏可以定义多个页面或url，页面应新建于content目录下
     title = "README"
     url = "/readme"
   [[Params.widgets.misc.custom]]

@@ -382,37 +382,37 @@ select {
 	background: #a3b8cc;
 }
 
-.logo {
+.topbar {
 	padding: 15px;
 }
 
-.logo__link {
+.topbar__link {
 	display: inline-block;
 }
 
-.logo__item {
+.topbar__item {
 	display: inline-block;
 	vertical-align: middle;
 }
 
-.logo__img {
+.topbar__img {
 	max-height: 256px;
 }
 
-.logo--mixed .logo__item {
+.topbar--mixed .topbar__item {
 	margin: .5rem auto;
 }
 
-.logo--mixed .logo__img {
+.topbar--mixed .topbar__img {
 	max-width: 128px;
 	max-height: 128px;
 }
 
-.logo--mixed .logo__text {
+.topbar--mixed .topbar__text {
 	padding: 0 1rem;
 }
 
-.logo__title {
+.topbar__title {
 	font-size: 32px;
 	font-size: 2rem;
 	font-weight: 700;
@@ -421,7 +421,7 @@ select {
 	text-shadow: 1px 1px 1px rgb(37, 37, 37);
 }
 
-.logo__tagline {
+.topbar__tagline {
 	display: inline-block;
 	padding-top: 10px;
 	margin-top: 10px;
@@ -1054,7 +1054,7 @@ textarea {
 	}
 
 	.wrapper,
-	.logo {
+	.topbar {
 		padding: 10px;
 	}
 }
@@ -1070,15 +1070,15 @@ textarea {
 		margin: 0;
 	}
 
-	.logo {
+	.topbar {
 		text-align: center;
 	}
 
-	.logo__link {
+	.topbar__link {
 		margin: 0 auto;
 	}
 
-	.logo__title {
+	.topbar__title {
 		font-size: 24px;
 		font-size: 1.5rem;
 	}
