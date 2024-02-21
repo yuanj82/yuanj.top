@@ -58,8 +58,8 @@
   translation: "MISC"
 
 # # busuanzi widget
-# - id: busuanzi_title
-#   translation: "BUSUANZI"
+- id: busuanzi_title
+  translation: "BUSUANZI"
 
 # Tags List widget
 - id: tags_title

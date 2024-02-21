@@ -623,13 +623,13 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	border-bottom: 1px dotted #ebebeb;
 }
 
-/* .post_busuanzi p {
+.post_busuanzi p {
 	color: #666;
 	padding: 5px 0;
 	font-size: 13px;
     font-size: .8125rem;
 	border-bottom: 1px dotted #ebebeb;
-} */
+}
 
 .post__lead {
 	margin-top: 4px;

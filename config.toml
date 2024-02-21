@@ -26,7 +26,7 @@ theme = ["hugo-search-fuse-js", "Mainroad"]
   home = "right"   # Configure layout for home page
   list = "right"   # Configure layout for list pages
   single = false # Configure layout for single pages
-  widgets = ["misc", "taglist", "recent"]
+  widgets = ["misc", "taglist", "recent","busuanzi"]
 
 [Params.widgets]
   recent_num = 11

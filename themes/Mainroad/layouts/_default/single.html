@@ -8,7 +8,7 @@
 			{{- end }}
 			{{ with partial "post_meta.html" . -}}
 			<div class="post__meta meta">{{ . }}</div>
-			<!-- <div class="post_busuanzi"><p>本文总阅读量 <span id="busuanzi_value_page_pv"></span> 次</p></div> -->
+			<div class="post_busuanzi"><p>本文总阅读量 <span id="busuanzi_value_page_pv"></span> 次</p></div>
 			{{- end }}
 		</header>
 		{{ partial "post_thumbnail.html" (dict "class" "post" "page" .) }}
