@@ -13,18 +13,18 @@ date: 2023-10-11T17:17:52+08:00
 
 打开 [hmmer 网页工具](https://www.ebi.ac.uk/Tools/hmmer/)，还是一样，上传序列，写下邮件地址，然后提交
 
-![](https://gcore.jsdelivr.net/gh/yuanj82/static/blog/202310111726041.png)
+![](https://images.yuanj.top/202310111726041.png)
 
 完成后会收到邮件
 
-![](https://gcore.jsdelivr.net/gh/yuanj82/static/blog/202310111727248.png)
+![](https://images.yuanj.top/202310111727248.png)
 
 将邮件末尾的结构域信息保存到文本文件中
 
-![](https://gcore.jsdelivr.net/gh/yuanj82/static/blog/202310111728580.png)
+![](https://images.yuanj.top/202310111728580.png)
 
 使用 TBtools 的 Visualize Pfam Domain Pattern 工具进行可视化，导入刚刚保存的结构域信息、蛋白序列（前面上传的）和基因 ID 列表，点击 start 出图即可
 
-![](https://gcore.jsdelivr.net/gh/yuanj82/static/blog/202310111729045.png)
+![](https://images.yuanj.top/202310111729045.png)
 
 保存时建议保存为 svg 格式，更加清晰，也更方便二次修改。

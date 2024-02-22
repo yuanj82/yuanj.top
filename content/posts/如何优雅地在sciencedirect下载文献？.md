@@ -25,22 +25,22 @@ date: 2023-09-20T17:12:12+08:00
 - 环境科学与工程相关
 - 影响因子尽量高
 
-![](https://gcore.jsdelivr.net/gh/yuanj82/static/blog/2023092017194.png)
+![](https://images.yuanj.top/2023092017194.png)
 
 这里显示文献相关信息使用了 [easyscholar 插件](https://www.easyscholar.cc/)
 
 跳转到 sciencedirect 查看全文并且下载 pdf
 
-![](https://gcore.jsdelivr.net/gh/yuanj82/static/blog/20230920172154.png)
+![](https://images.yuanj.top/20230920172154.png)
 
 但点击 View PDF 后一直是空白页，网上找到的方法也不行，我想到用学校的 VPN 进入 sciencedirect 数据库
 
-![](https://gcore.jsdelivr.net/gh/yuanj82/static/blog/20230920172358.png)
+![](https://images.yuanj.top/20230920172358.png)
 
-![](https://gcore.jsdelivr.net/gh/yuanj82/static/blog/20230920172451.png)
+![](https://images.yuanj.top/20230920172451.png)
 
 搜索关键词，选择符合我所需要的条件的文献，选中全部下载
 
-![](https://gcore.jsdelivr.net/gh/yuanj82/static/blog/2023092017264.png)
+![](https://images.yuanj.top/2023092017264.png)
 
 文献下载一直是一个痛点，比较麻烦，市面上也有很多付费帮忙下载的，但自己要是掌握了方法的话就可以任意下载了，靠高校的数据库下载也会很容易的，尤其外文文献，中文文献貌似只有知网比较全面，但是期刊比较多，学校没有购买对应期刊的数据库的时候又该怎么办？不过一般比较顶尖的论文都发在英文期刊吧，SCI 英文文章一般质量较高，有一定的创新性，科学性和严谨性，有点什么重大研究的，首先想到的都是发国际期刊，而中文期刊貌似从英文期刊也“借鉴”了不少？掌握英文文献的下载实在是太重要了~

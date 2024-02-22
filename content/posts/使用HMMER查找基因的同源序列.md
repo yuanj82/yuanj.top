@@ -26,17 +26,17 @@ Linux 系统环境、HMMER 软件、pfam 网站（http://pfam-legacy.xfam.org/�
 我以拟南芥的 SBP 家族为例
 打开 [pfam](http://pfam-legacy.xfam.org/)，输入基因家族的 pf 号点击 go 进行查询
 
-![](https://gcore.jsdelivr.net/gh/yuanj82/static/blog/20230422214309.png)
+![](https://images.yuanj.top/20230422214309.png)
 
 也可以通过查询关键字来查找
 
 查询到之后，点击左边的 Curation & model 下载 hmm 文件
 
-![](https://gcore.jsdelivr.net/gh/yuanj82/static/blog/20230422214325.png)
+![](https://images.yuanj.top/20230422214325.png)
 
 再点击 Alignments 选择 stockholm，点击 gengerate 后会自动下载一个 txt 文件
 
-![](https://gcore.jsdelivr.net/gh/yuanj82/static/blog/20230422214336.png)
+![](https://images.yuanj.top/20230422214336.png)
 
 ## 安装 HMMER
 
@@ -60,7 +60,7 @@ conda install hmmer
 hmmbuild [xxx.hmm] [xxx.txt] #构建 hmm 模型（使用我们再 pfam 网站下载的 hmm 文件和 txt 文件，要保证文件都在同一工作目录下
 ```
 
-![](https://gcore.jsdelivr.net/gh/yuanj82/static/blog/20230422214418.png)
+![](https://images.yuanj.top/20230422214418.png)
 
 ## 进行比对
 
@@ -77,7 +77,7 @@ hmmsearch [hmm 文件] [待比对物种 fasta 文件] > [输出文件名]
 cat result.out
 ```
 
-![](https://gcore.jsdelivr.net/gh/yuanj82/static/blog/20230422214437.png)
+![](https://images.yuanj.top/20230422214437.png)
 
 ## 进一步筛选
 

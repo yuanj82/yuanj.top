@@ -181,7 +181,7 @@ plot <- p
 plot # 绘图并展示
 ```
 
-![](https://gcore.jsdelivr.net/gh/yuanj82/static/blog/202311242219293.png)
+![](https://images.yuanj.top/202311242219293.png)
 
 将绘图结果保存为文件：
 

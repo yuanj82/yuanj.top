@@ -16,7 +16,7 @@ GitHub 仓库：[OStools](https://github.com/yuanj82/OStools) 还在不断更新
 
 安装 Python 后，Windows 系统运行`start.exe`，Linux 系统运行`main.py`。
 
-![](https://gcore.jsdelivr.net/gh/yuanj82/static/blog/202309292124230.png)
+![](https://images.yuanj.top/202309292124230.png)
 
 ## 实现
 
