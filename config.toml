@@ -25,12 +25,6 @@ theme = ["hugo-search-fuse-js", "cloud"]
     title = "README"
     url = "/readme"
   [[Params.widgets.misc.custom]]
-    title = "Projects"
-    url = "/projects"
-  [[Params.widgets.misc.custom]]
-    title = "Natter"
-    url = "/natter"
-  [[Params.widgets.misc.custom]]
     title = "搜索"
     url = "/search"
   [[Params.widgets.misc.custom]]
