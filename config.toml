@@ -4,7 +4,7 @@ languageCode = "en-us"
 paginate = "10"                          # 每页的文章数量
 theme = ["hugo-search-fuse-js", "cloud"]
 [Params.style.vars]
-  highlightColor = "     #a3b8cc"        # 主题色
+  highlightColor = "#a3b8cc"        # 主题色
 
 [Params]
   post_meta = ["date"]

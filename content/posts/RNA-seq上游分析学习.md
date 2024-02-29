@@ -106,7 +106,7 @@ SRA Toolkit 和 samtools 安装时有坑，先搜索 sra-tools 和 samtools 的�
 
 ```bash
 conda search sra-tools
-conda install sra-toolst=3.0.7
+conda install sra-tools=3.0.7
 
 conda search samtools
 conda install samtools=1.9
@@ -155,7 +155,7 @@ prefetch --option-file SRR_Acc_List.txt
 由于数据比较大，可以使用 nohup 命令挂在后台下载
 
 ```bash
-nohup prefetch --option-file SRR_Acc_List.txt
+nohup prefetch --option-file SRR_Acc_List.txt &
 ```
 
 刚刚下载好的数据是 sra 格式的，使用 sratools 将其拆分
@@ -174,7 +174,7 @@ fastq-dump --gzip --split-3 SRR25909836.sra
 mkdir SRR
 mv ./SRR*/*.sra ./SRR
 cd SRR
-nohup fastq-dump --gzip --split-3 SRR*.sra 
+nohup fastq-dump --gzip --split-3 SRR*.sra &
 ```
 
 ### 参考基因组及注释文件
@@ -225,7 +225,7 @@ fastqc SRR25909836_1.fastq.gz
 当然，数据比较多的时候还是挂在后台批处理然后等着就行
 
 ```bash
-nohup fastqc SRR*.fastq.gz
+nohup fastqc SRR*.fastq.gz &
 ```
 
 程序运行完成后会输出一堆 html 文件和 zip 压缩包，html 是网页版报告，zip 是本地宝报告，下载到本地用浏览器打开就可以看到质量检测报告了
