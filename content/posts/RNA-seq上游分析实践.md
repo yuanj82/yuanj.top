@@ -148,3 +148,5 @@ fi
 最后将数据下载到本地进行下游分析
 
 ![](https://images.yuanj.top/2023090820577.png)
+
+全流程分析代码可以在我的 [GitHub](https://github.com/yuanj82/Omics) 获取。
