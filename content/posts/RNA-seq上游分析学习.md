@@ -90,26 +90,30 @@ RNA-seq 中最常用的分析方法就是找出差异表达基因 (Differential 
 - samtools：对 hisat2 比对的结果进行排序和压缩
 - featureCounts：对基因的信息进行计数统计
 
-先创建一个虚拟环境，要注意的是最新版的 samtools 需要 3.9 及以上环境
+先创建 conda 虚拟环境，安装所需要的软件，可以自行手动安装，也可以直接导入我的 conda 环境：
 
 ```bash
-conda create -n rna-seq python=3.10
+git clone https://github.com/yuanj82/genomics.git
+cd genomics
+cp .condarc ~/
+conda env create --file env.yml
 ```
 
-安装所有需要的软件
+创建完成后激活环境就可以使用了：
 
 ```bash
-conda install fastqc trimmomatic hisat2 subread #subread 即 featureCounts
+conda activate genomics
 ```
 
-SRA Toolkit 和 samtools 安装时有坑，先搜索 sra-tools 和 samtools 的版本，然后安装指定版本
+如果想自己安装也可以，用下列命令就可以：
 
 ```bash
-conda search sra-tools
-conda install sra-tools=3.0.7
-
-conda search samtools
-conda install samtools=1.9
+conda install bioconda::sra-tools
+conda install bioconda::fastqc
+conda install bioconda::trimmomatic
+conda install bioconda::samtools
+conda install bioconda::hisat2
+conda install bioconda::subread
 ```
 
 ## 数据获取与预处理
@@ -155,7 +159,7 @@ prefetch --option-file SRR_Acc_List.txt
 由于数据比较大，可以使用 nohup 命令挂在后台下载
 
 ```bash
-nohup prefetch --option-file SRR_Acc_List.txt &
+nohup prefetch -O . $(<SRR_Acc_List.txt) &
 ```
 
 刚刚下载好的数据是 sra 格式的，使用 sratools 将其拆分
@@ -172,9 +176,12 @@ fastq-dump --gzip --split-3 SRR25909836.sra
 ```bash
 #!/bin/bash
 mkdir SRR
-mv ./SRR*/*.sra ./SRR
+cat SRR_Acc_List.txt | while read id; do mv -f $id/$id.sra  ./SRR; done
 cd SRR
-nohup fastq-dump --gzip --split-3 SRR*.sra &
+for i in *sra
+do
+	fastq-dump --gzip --split-3 $i -f ../fastqgz
+done
 ```
 
 ### 参考基因组及注释文件
@@ -463,7 +470,7 @@ hisat2-build -p 4 oryza_sativa.fa oryza_sativa
 我使用的命令如下
 
 ```bash
-hisat2 -x oryza_sativa/oryza_sativa -p 5 -1 trimmed_1P -2 trimmed_2P -S oryza_sativa.sam
+hisat2 -x oryza_sativa/oryza_sativa -p 5 -1 SRR25909836_1.fastq.gz S-2 RR25909836_2.fastq.gz -S oryza_sativa.sam
 ```
 
 注意-x 后跟索引文件，不加拓展名，保证 ht2 文件和 fa 文件的文件名一致即可，这里由于前面过滤后的序列是没有拓展名的，所以会提示 Warning: Unsupported file format，不影响结果
@@ -532,7 +539,7 @@ z -S oryza_sativa.sam
 我使用的是以下命令
 
 ```bash
-samtools sort -n -@ 5 oryza_sativa.sam -o oryza_sativa
+samtools sort -n -@ 5 oryza_sativa.sam -o oryza_sativa.bam
 ```
 
 运行完成后会得到一个 bam 文件

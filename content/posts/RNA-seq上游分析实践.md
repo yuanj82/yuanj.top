@@ -108,15 +108,7 @@ do
 done
 ```
 
-比对完成后要进行排序压缩，到这里时我的 samtools 一直报错，Google 了一下才发现是 samtools 版本的一个 bug，安装指定版本就没问题了，于是新建 conda 环境进行安装（如果没有报错直接使用即可）
-
-```bash
-conda create -n samtools python=3.10
-conda search samtools
-conda install samtools=1.9  #指定安装 1.9
-```
-
-安装完成继续进行，还是写成 bash 脚本一键进行，这里我将每次排序的结构按照 1-6 分别命名
+还是写成 bash 脚本一键进行，这里我将每次排序的结构按照 1-6 分别命名
 
 ```bash
 #!/bin/bash
