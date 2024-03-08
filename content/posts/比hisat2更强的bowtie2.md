@@ -1,7 +1,7 @@
 ---
 title: 比 Hisat2 更强的 bowtie2
 tags:
-  - "Transcriptomics"
+  - "Genomics"
   - "Bioinformatics"
 slug: e3v5q7k1
 date: 2024-03-06T15:21:34+08:00

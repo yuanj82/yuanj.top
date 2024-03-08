@@ -1,7 +1,7 @@
 ---
 title: RNA Seq 上游分析实践
 tags:
-  - "Transcriptomics"
+  - "Genomics"
   - "Bioinformatics"
 slug: j9t9v3y1
 date: 2023-09-08T20:29:36+08:00

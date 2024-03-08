@@ -1,7 +1,7 @@
 ---
-title: 使用 trim Galore 替代 Trimmomatic 进行转录组数据清洗
+title: 使用 Trim Galore 替代 Trimmomatic 进行转录组数据清洗
 tags:
-  - "Transcriptomics"
+  - "Genomics"
   - "Bioinformatics"
 slug: y2b9l4g8
 date: 2024-03-06T15:09:41+08:00
@@ -40,7 +40,7 @@ date: 2024-03-06T15:09:41+08:00
 
 总结一句话就是，Trim_galore 更方便、简单直观，适用的平台多，而 Trimmomatic 最大的好处是功能和可调用的参数多。
 
-## trim_galore 参数
+## Trim_galore 参数
 
 参数说明：
 
