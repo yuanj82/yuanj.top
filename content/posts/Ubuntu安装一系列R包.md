@@ -55,3 +55,28 @@ install.packages("tidyverse")
 install.packages("ggrepel")
 install.packages("ggplot2")
 ```
+
+## ChIPseeker&DESeq2
+
+安装库：
+
+```bash
+sudo apt-get install libglpk-dev
+```
+
+安装依赖 R 包：
+
+```r
+install.packages("igraph")
+
+install.packages("devtools")
+remotes::install_github('YuLab-SMU/ggtree')
+BiocManager::install("enrichplot")
+```
+
+然后安装：
+
+```r
+devtools::install_github("YuLab-SMU/ChIPseeker")
+BiocManager::install("DESeq2")
+```
