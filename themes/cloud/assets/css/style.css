@@ -44,7 +44,7 @@ html {
 }
 
 body {
-	font-family: 'trebuchet ms', verdana, helvetica, arial, sans-serif;
+	/* font-family: 'trebuchet ms', verdana, helvetica, arial, sans-serif; */
 	margin: 0;
 	font-size: 14px;
 	font-size: .875rem;
@@ -255,29 +255,43 @@ code,
 kbd,
 samp {
 	font-size: inherit;
-	font-family: Menlo,Monaco,Consolas,"Andale Mono","lucida console","Courier New",monospace;
+	font-family: Consolas;
 }
 
 pre,
 code {
-	font-family: Menlo,Monaco,Consolas,"Andale Mono","lucida console","Courier New",monospace;
+	font-family: Consolas;
 }
 
 code {
 	padding: 0 5px;
 	color: #c33;
-	font-family: Menlo,Monaco,Consolas,"Andale Mono","lucida console","Courier New",monospace;
+	font-family: Consolas;
 }
 
 pre {
-	display: block;
-	padding: 0;
-	padding: 1.25rem;
-	margin-bottom: 20px;
-	margin-bottom: 1.25rem;
-	overflow: auto;
-	color: #ffffff !important;
-	background-color: #2e2e2e !important;
+    display: block;
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+    overflow: auto;
+    color: #ffffff !important;
+    background-color: #232936 !important;
+    border-radius: 5px;
+    border: 1px solid #000000;
+}
+
+pre::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+pre::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+pre::-webkit-scrollbar-thumb {
+    background-color: #888888;
+    border-radius: 20px;
 }
 
 pre code {
@@ -286,7 +300,7 @@ pre code {
 	white-space: inherit;
 	background: inherit;
 	border: 0;
-	font-family: Menlo,Monaco,Consolas,"Andale Mono","lucida console","Courier New",monospace;
+	font-family: Consolas;
 }
 
 kbd {
