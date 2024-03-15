@@ -2,7 +2,7 @@
 title: Ubuntu 安装一系列 R 包
 tags:
   - "Linux"
-  - "TUbuntu"
+  - "Ubuntu"
 slug: f8t9v3q0
 date: 2024-03-10T13:37:59+08:00
 ---
