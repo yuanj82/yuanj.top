@@ -31,11 +31,13 @@ title: 友链
 - [虹色轨迹🌠](https://dil.illlli.com)
 - [Stars Harbor's Blog](https://blog.starsharbor.com)
 - [博友圈](https://www.boyouquan.com/home)
+- [Ljohn's Blog](https://www.ljohn.cn)
+- [By烟花易冷](https://www.zzfly.net)
 
 ##### Add me
 
 ```yml
-name: UncleCAT4
+name: yuanj's blog
 link: https://yuanj.top
 avatar: https://yuanj.top/images/avatar.png
 descr: 思绪来得快去得也快，偶尔会在这里停留
