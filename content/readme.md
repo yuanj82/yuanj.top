@@ -2,16 +2,17 @@
 title: README
 ---
 
-## 👋 Hi there!
+## Hi, I'm Yuan Jiao 👋
 
-我是焦元，来自成都理工大学，兴趣爱好很广泛，喜欢 [读书](https://yuanj.top/tags/notes/)、打篮球、跑步、历史、编程、[city walk](https://yuanj.top/tags/travels/)、 [生物信息学](https://yuanj.top/tags/bioinformatics/) 和有趣的东西，[GitHub](https://github.com/yuanj82) 与 [博客](https://yuanj.top/) 上的内容也多与这些有关。欢迎与我交流各类问题。
-
-- yuanj.top @ gmail.com
-- [公众号](/images/wechat.jpg)
-- [RSS](/index.xml)
-- [GitHub](https://github.com/yuanj82)
-- [BiliBli](https://space.bilibili.com/1692277850?spm_id_from=333.1007.0.0)
-- [Google Scholar](https://scholar.google.com/citations?hl=zh-CN&user=VHD-XpkAAAAJ)
+- 🏫 [CDUT](https://www.cdut.edu.cn/) - BSc in Environmental Science and Engineering, 6/2021 - 7/2025.
+- 👨‍🎓 Member of _[HJLab](https://www.x-mol.com/groups/hj-lab)_, 12/2022 - Now.
+- 🧬 Shell / Python / R / Bioinformatics / NGS-analysis / Linux players.
+- 📫 Email me at: [yuanj.top@gmail.com](https://yuanj.top/images/email.png) .
+- 💻 WeChat public account blogger [猫四叔](https://yuanj.top/images/wechat.jpg).
+- 🎮 Game player for [Machines at War 3](https://www.isotope244.com/machines-at-war-3.html) / [VALORANT](https://val.qq.com/main.html) / [Minecraft](https://www.minecraft.net/zh-hans).
+- 🎥 Bilibili UP Pig named [yuanj82](https://space.bilibili.com/1692277850?spm_id_from=333.1007.0.0)
+- 📰 Paper writers available on [Google Scholar](https://scholar.google.com/citations?hl=zh-CN&user=VHD-XpkAAAAJ).
+- 👓 Rookie who is often active on GitHub
 
 ## 你可以在这里留言
 
