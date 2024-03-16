@@ -2,8 +2,7 @@
 	{{ partial "post_thumbnail.html" (dict "class" "list" "page" .) }}
 	<header class="list__header">
 		<h2 class="list__title post__title">
-			{{ .Title }}
-			</a>
+			<a href="{{ .RelPermalink }}" style="color: #7a8288; text-decoration: none;" onmouseover="this.style.color='#4d4e4e';" onmouseout="this.style.color='#7a8288';">{{ .Title }}</a>
 		</h2>
 		{{- with .Params.lead }}
 		<p class="list__lead post__lead">{{ . }}</p>

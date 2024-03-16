@@ -1,5 +1,3 @@
-{{- $highlightColor := .Site.Params.style.vars.highlightColor | default (.Site.Params.highlightColor | default "#e22d30") -}}
-
 *,
 *::before,
 *::after {
@@ -57,7 +55,7 @@ body {
 .container {
 	position: relative;
 	width: 100%;
-	max-width: 750px;
+	max-width: 810px;
 	margin: 0 auto;
 }
 
@@ -193,7 +191,7 @@ a {
 }
 
 a:hover {
-	color: {{ $highlightColor }};
+	color: #a3b8cc;
 }
 
 hr {
@@ -315,7 +313,7 @@ blockquote {
 	margin: 0 0 20px;
 	margin: 0 0 1.25rem;
 	line-height: 1.6;
-	border-left: 5px solid {{ $highlightColor }};
+	border-left: 5px solid #a3b8cc;
 }
 
 blockquote p:last-child {
@@ -480,7 +478,7 @@ select {
 }
 
 :focus > .menu__btn-title {
-	box-shadow: inset 0 0 1px 3px {{ $highlightColor }};
+	box-shadow: inset 0 0 1px 3px #a3b8cc;
 }
 
 button:not(:-moz-focusring):focus > .menu__btn-title {
@@ -493,7 +491,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .js .menu__btn--active {
-	color: {{ $highlightColor }};
+	color: #a3b8cc;
 }
 
 .menu__list {
@@ -501,7 +499,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .menu__item:hover {
-	background: {{ $highlightColor }};
+	background: #a3b8cc;
 }
 
 .menu__item:first-child {
@@ -509,7 +507,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .menu__item--active {
-	background: {{ $highlightColor }};
+	background: #a3b8cc;
 }
 
 .menu__link {
@@ -549,7 +547,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 
 @media screen and (min-width: 767px) {
 	.menu {
-		border-bottom: 5px solid {{ $highlightColor }};
+		border-bottom: 5px solid #a3b8cc;
 	}
 
 	.menu__btn {
@@ -603,7 +601,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .meta a:hover {
-	color: {{ $highlightColor }};
+	color: #a3b8cc;
 }
 
 .meta__item {
@@ -671,7 +669,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 
 .content a:hover,
 .warning a:hover {
-	color: {{ $highlightColor }};
+	color: #a3b8cc;
 	text-decoration: underline;
 }
 
@@ -744,7 +742,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 }
 
 .tags__item:hover {
-	background: {{ $highlightColor }};
+	background: #a3b8cc;
 }
 
 .tags__link,
@@ -759,72 +757,8 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 	height: 32px;
 	padding: 8px;
 	margin-right: 6px;
-	background: {{ $highlightColor }};
+	background: #a3b8cc;
 	fill: #fff;
-}
-
-/* Table of Contents */
-.toc {
-	margin-bottom: 20px;
-	font-weight: 700;
-	color: #7a8288;
-	background: #fff;
-	border-color: #ebebeb;
-	border-style: solid;
-	border-top-width: 1px;
-	border-right-width: 1px;
-	border-bottom-width: 0;
-	border-left-width: 1px;
-}
-
-.toc__title {
-	padding: 5px 10px;
-	color: #fff;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	-o-user-select: none;
-	user-select: none;
-	background: #2a2a2a;
-}
-
-.toc__menu ul {
-	margin: 0;
-}
-
-.toc__menu li li a {
-	padding-left: 25px;
-}
-
-.toc__menu li li li a {
-	padding-left: 45px;
-}
-
-.toc__menu li li li li a {
-	padding-left: 65px;
-}
-
-.toc__menu li li li li li a {
-	padding-left: 85px;
-}
-
-.toc__menu li li li li li li a {
-	padding-left: 105px;
-}
-
-.toc__menu li {
-	margin: 0;
-}
-
-.toc__menu a {
-	display: block;
-	padding: 5px 10px;
-	color: {{ $highlightColor }};
-	border-bottom: 1px solid #ebebeb;
-}
-
-.toc__menu a:hover {
-	text-decoration: underline;
 }
 
 /* List content */
@@ -886,7 +820,7 @@ button:not(:-moz-focusring):focus > .menu__btn-title {
 .pagination__item:hover,
 .pagination__item--current {
 	color: #fff;
-	background: {{ $highlightColor }};
+	background: #a3b8cc;
 }
 
 /* Images / Video */
@@ -964,12 +898,11 @@ input[type=reset] {
 	background: #2a2a2a;
 	border: 0;
 	transition: all .1s linear;
-	-webkit-appearance: none;
 }
 
 input[type=submit]:hover,
 input[type=reset]:hover {
-	background: {{ $highlightColor }};
+	background: #a3b8cc;
 }
 
 textarea {
@@ -994,7 +927,7 @@ textarea {
 
 .widget__title {
 	border-left: 5px solid #000000;
-	background: {{ $highlightColor }};;
+	background: #a3b8cc;;
 	margin: 0;
 	position: relative;
 	padding: 3px;
@@ -1146,15 +1079,4 @@ textarea {
 		font-size: 11px;
 		font-size: .6875rem;
 	}
-}
-.comments {
-	border-left: 5px solid #000000;
-	background: {{ $highlightColor }};
-	margin: 0;
-	position: relative;
-    padding-left: 10px;
-	font-size: 16px;
-	font-size: .8rem;
-	font-weight: bold;
-	color: #ffffff;
 }
