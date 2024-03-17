@@ -80,3 +80,23 @@ BiocManager::install("enrichplot")
 devtools::install_github("YuLab-SMU/ChIPseeker")
 BiocManager::install("DESeq2")
 ```
+
+## geneHapR
+
+先安装库和依赖：
+
+```bash
+sudo apt-get install libudunits2-dev cmake libgdal-dev
+```
+
+再安装依赖 R 包：
+
+```r
+BiocManager::install(c("Biostrings", "GenomicRanges", "muscle", "IRanges", "rtracklayer", "trackViewer"))
+```
+
+然后从 repo 安装：
+
+```r
+devtools::install_git("https://gitee.com/zhangrenl/genehapr")
+```
