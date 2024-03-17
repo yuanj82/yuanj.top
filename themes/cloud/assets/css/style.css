@@ -253,18 +253,18 @@ code,
 kbd,
 samp {
 	font-size: inherit;
-	font-family: Consolas;
+	font-family: Menlo,Monaco,Consolas,"Andale Mono","lucida console","Courier New",monospace;
 }
 
 pre,
 code {
-	font-family: Consolas;
+	font-family: Menlo,Monaco,Consolas,"Andale Mono","lucida console","Courier New",monospace;
 }
 
 code {
 	padding: 0 5px;
 	color: #c33;
-	font-family: Consolas;
+	font-family: Menlo,Monaco,Consolas,"Andale Mono","lucida console","Courier New",monospace;
 }
 
 pre {
@@ -298,7 +298,7 @@ pre code {
 	white-space: inherit;
 	background: inherit;
 	border: 0;
-	font-family: Consolas;
+	font-family: Menlo,Monaco,Consolas,"Andale Mono","lucida console","Courier New",monospace;
 }
 
 kbd {
