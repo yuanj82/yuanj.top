@@ -1069,3 +1069,17 @@ textarea {
 	}
 }
 
+@media screen and (min-width: 1930px) {
+    body {
+        font-size: 18px;
+    }
+    .container {
+        max-width: 810px;
+    }
+	.widget-taglist__link {
+		font-size: 18px;
+	}
+	.list__title {
+		font-size: 20px;
+	}
+}
