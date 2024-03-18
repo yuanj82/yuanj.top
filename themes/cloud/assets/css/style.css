@@ -42,7 +42,7 @@ html {
 }
 
 body {
-	/* font-family: 'trebuchet ms', verdana, helvetica, arial, sans-serif; */
+	font-family: 'trebuchet ms', verdana, helvetica, arial, sans-serif;
 	margin: 0;
 	font-size: 14px;
 	font-size: .875rem;
@@ -55,7 +55,7 @@ body {
 .container {
 	position: relative;
 	width: 100%;
-	max-width: 810px;
+	max-width: 750px;
 	margin: 0 auto;
 }
 
@@ -268,28 +268,14 @@ code {
 }
 
 pre {
-    display: block;
-    padding: 1.25rem;
-    margin-bottom: 1.25rem;
-    overflow: auto;
-    color: #ffffff !important;
-    background-color: #232936 !important;
-    border-radius: 5px;
-    border: 1px solid #000000;
-}
-
-pre::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-}
-
-pre::-webkit-scrollbar-track {
-    background: transparent;
-}
-
-pre::-webkit-scrollbar-thumb {
-    background-color: #888888;
-    border-radius: 20px;
+	display: block;
+	padding: 0;
+	padding: 1.25rem;
+	margin-bottom: 20px;
+	margin-bottom: 1.25rem;
+	overflow: auto;
+	color: #ffffff !important;
+	background-color: #232936 !important;
 }
 
 pre code {
@@ -898,6 +884,8 @@ input[type=reset] {
 	background: #2a2a2a;
 	border: 0;
 	transition: all .1s linear;
+	-webkit-appearance: none;
+	appearance: none;
 }
 
 input[type=submit]:hover,
@@ -1080,3 +1068,4 @@ textarea {
 		font-size: .6875rem;
 	}
 }
+
