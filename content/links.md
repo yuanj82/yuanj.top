@@ -32,7 +32,8 @@ title: 友链
 - [Stars Harbor's Blog](https://blog.starsharbor.com)
 - [博友圈](https://www.boyouquan.com/home)
 - [Ljohn's Blog](https://www.ljohn.cn)
-- [By烟花易冷](https://www.zzfly.net)
+- [By 烟花易冷](https://www.zzfly.net)
+- [维燕的知识花园](https://weiyan.cc)
 
 ##### Add me
 

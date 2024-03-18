@@ -30,7 +30,7 @@ install.packages('languageserver')
 需要的库：
 
 ```bash
-sudo apt-get install libfreetype6-dev libharfbuzz-dev libfribidi-dev libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev
+sudo apt-get install libfreetype6-dev libharfbuzz-dev libfribidi-dev libfreetype6-dev libpng-dev libtiff5-dev libjpeg-dev libfontconfig1-dev
 ```
 
 安装依赖的 R 包：
@@ -92,6 +92,8 @@ sudo apt-get install libudunits2-dev cmake libgdal-dev
 再安装依赖 R 包：
 
 ```r
+BiocManager::install("Gviz")
+BiocManager::install("trackViewer")
 BiocManager::install(c("Biostrings", "GenomicRanges", "muscle", "IRanges", "rtracklayer", "trackViewer"))
 ```
 
