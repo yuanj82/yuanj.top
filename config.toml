@@ -36,6 +36,9 @@ theme = ["hugo-search-fuse-js", "cloud"]
   [[Params.widgets.misc.custom]]
     title = "GitHub"
     url = "https://github.com/yuanj82"
+  [[Params.widgets.misc.custom]]
+    title = "RSS"
+    url = "/index.xml"
 
 [markup]
   defaultMarkdownHandler = "goldmark"
