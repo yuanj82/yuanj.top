@@ -2,6 +2,7 @@
 title: Arch 清除缓存及无用包
 tags:
   - "Linux"
+  - "Arch"
 slug: o1r3l6y0
 date: 2023-11-15T19:53:29+08:00
 ---
