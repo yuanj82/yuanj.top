@@ -4,7 +4,7 @@ tags:
   - "Linux"
   - "Arch"
 slug: o1r3l6y0
-date: 2023-11-15T19:53:29+08:00
+date: 2024-03-15T19:53:29+08:00
 ---
 
 使用 Arch 时间长了，难免会产生一些无用包或者缓存，记录一些清理相关垃圾命令。
@@ -28,4 +28,10 @@ sudo pacman -Qtdq | sudo pacman -Rns -
 
 ```bash
 sudo pacman -Scc 
+```
+
+设定日志大小：
+
+```bash
+sudo journalctl --vacuum-size=500M                #超过 500M 的自动删除
 ```

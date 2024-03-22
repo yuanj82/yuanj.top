@@ -448,7 +448,7 @@ lightdm 使用`lightdm-gtk-greeter-settings`来进行美化。
 ## 日常软件
 
 - ohmyfish 增强 fish[GitHub](https://github.com/oh-my-fish/oh-my-fish)
-- google-chrome 谷歌浏览器`aur`
+- firefox 火狐浏览器
 - wemeet-bin 腾讯会议`aur`
 - linuxqq QQ`aur`
 - wps-office-cn wps-office-mui-zh-cn ttf-wps-fonts WPS 国内版及字体和符号支持`aur`
@@ -458,4 +458,13 @@ lightdm 使用`lightdm-gtk-greeter-settings`来进行美化。
 - rstudio-desktop-bin Rstudio`aur`
 - piclist-bin 图床工具`aur`
 - wechat-uos-bwrap 微信`aur`
-- miniconda3 conda 包管理器`aur`
+- mambaforge 更好用的 conda 包管理器`aur`
+
+## 问题解决
+
+**内核启动时无法识别部分外置 USB 蓝牙**：
+
+```bash
+rmmod btusb
+modprobe btusb
+```
