@@ -300,6 +300,12 @@ EDITOR=vim visudo
 su - myusername
 ```
 
+启动网络管理器：
+
+```bash
+sudo systemctl enable --now NetworkManager
+```
+
 ## 桌面环境的安装
 
 我比较喜欢用 cinnamon 桌面+lightdm 管理器，英伟达显卡下 wayland 配置麻烦，索性用 X11：
@@ -432,7 +438,7 @@ lightdm 使用`lightdm-gtk-greeter-settings`来进行美化。
 
 - numlockx 使 lightdm 开机默认打开数字键盘 [Lightdm Wiki](https://wiki.archlinuxcn.org/wiki/LightDM#%E9%BB%98%E8%AE%A4%E6%89%93%E5%BC%80%E5%B0%8F%E9%94%AE%E7%9B%98)
 - neofetch 系统信息查看
-- fish 更好用的 shell
+- zsh 更好用的 shell
 - yay aur 助手
 - ntfs-3g 识别 NTFS 硬盘
 - gwenview 图片查看器
@@ -447,7 +453,7 @@ lightdm 使用`lightdm-gtk-greeter-settings`来进行美化。
 
 ## 日常软件
 
-- ohmyfish 增强 fish[GitHub](https://github.com/oh-my-fish/oh-my-fish)
+- ohmyzsh 增强zsh[清华镜像](https://mirrors.tuna.tsinghua.edu.cn/help/ohmyzsh.git/)
 - firefox 火狐浏览器
 - wemeet-bin 腾讯会议`aur`
 - linuxqq QQ`aur`
@@ -458,7 +464,8 @@ lightdm 使用`lightdm-gtk-greeter-settings`来进行美化。
 - rstudio-desktop-bin Rstudio`aur`
 - piclist-bin 图床工具`aur`
 - wechat-uos-bwrap 微信`aur`
-- mambaforge 更好用的 conda 包管理器`aur`
+- mambaforge 更快的 conda 包管理器`aur`
+- timeshift 系统快照
 
 ## 问题解决
 
