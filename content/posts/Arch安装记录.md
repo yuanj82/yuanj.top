@@ -453,7 +453,7 @@ lightdm 使用`lightdm-gtk-greeter-settings`来进行美化。
 
 ## 日常软件
 
-- ohmyzsh 增强zsh[清华镜像](https://mirrors.tuna.tsinghua.edu.cn/help/ohmyzsh.git/)
+- ohmyzsh 增强 zsh[清华镜像](https://mirrors.tuna.tsinghua.edu.cn/help/ohmyzsh.git/)
 - firefox 火狐浏览器
 - wemeet-bin 腾讯会议`aur`
 - linuxqq QQ`aur`
@@ -474,4 +474,16 @@ lightdm 使用`lightdm-gtk-greeter-settings`来进行美化。
 ```bash
 rmmod btusb
 modprobe btusb
+```
+
+**可以导出系统安装的包，方便一键安装**
+
+```bash
+pacman -Qqen > packages-repository.txt   # 导出
+pacman --needed -S - < packages-repository.txt  # 安装 
+```
+
+```bash
+pacman -Qqem > packages-AUR.txt   # 导出
+cat packages-AUR.txt | xargs yaourt -S --needed --noconfirm  # 安装 
 ```
