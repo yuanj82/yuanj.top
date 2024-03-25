@@ -17,7 +17,7 @@ date: 2024-03-20T18:30:31+08:00
 
 ## 禁用 reflector 服务
 
-2020 年，archlinux 安装镜像中加入了 reflector 服务，它会自己更新 mirrorlist。在特定情况下，它会误删某些有用的源信息。这里进入安装环境后的第一件事就是将其禁用。也许它是一个好用的工具，但是很明显，因为地理上造成的特殊网络环境，这项服务并不适合启。使用下列命令禁用：
+2020 年，archlinux 安装镜像中加入了 reflector 服务，它会自己更新 mirrorlist。在特定情况下，它会误删某些有用的源信息。这里进入安装环境后的第一件事就是将其禁用。也许它是一个好用的工具，但是很明显，因为地理上造成的特殊网络环境，这项服务并不适合加入到守护进程中。使用下列命令禁用：
 
 ```bash
 systemctl stop reflector.service
@@ -86,7 +86,7 @@ mkfs.fat -F32 /dev/nvme0n1p1
 mkfs.btrfs -L Arch /dev/nvme0n1p2
 ```
 
-这里是的 Arch 只是指定的一个标签，没有什么特殊的作用。
+这里的 Arch 只是指定的一个标签，没有什么特殊的作用。
 
 把 btrfs 分区挂在到/mnt 下准备创建子卷：
 
@@ -228,6 +228,20 @@ vim /etc/hostname
 ```
 
 写入自己想要的名字。
+
+## 设置 hosts
+
+```bash
+vim /etc/hosts
+```
+
+写入：
+
+```bash
+127.0.0.1   localhost
+::1         localhost
+127.0.1.1   myarch.localdomain myarch
+```
 
 ## 设置时区
 
@@ -441,19 +455,19 @@ lightdm 使用`lightdm-gtk-greeter-settings`来进行美化。
 - zsh 更好用的 shell
 - yay aur 助手
 - ntfs-3g 识别 NTFS 硬盘
-- gwenview 图片查看器
+- gthumb 图片查看器
 - xed 文本编辑器
 - xarchiver 图形化解压缩软件
 - p7zip 命令行解压缩软件
 - flameshot 截图工具，时间戳为`%Y%m%d%H%M%S`
 - v2raya 透明代理（需要添加守护进程）`aur`
-- VLC 播放器
+- mpv 播放器
 - bluez bluez-utils blueman 蓝牙协议支持与管理
 - nvidia nvidia-settings lib32-nvidia-utils 英伟达显卡驱动
 
 ## 日常软件
 
-- ohmyzsh 增强 zsh[清华镜像](https://mirrors.tuna.tsinghua.edu.cn/help/ohmyzsh.git/)
+- ohmyzsh 增强 zsh [清华镜像](https://mirrors.tuna.tsinghua.edu.cn/help/ohmyzsh.git/)
 - firefox 火狐浏览器
 - wemeet-bin 腾讯会议`aur`
 - linuxqq QQ`aur`
@@ -463,7 +477,7 @@ lightdm 使用`lightdm-gtk-greeter-settings`来进行美化。
 - visual-studio-code-bin 代码编辑器`aur`
 - rstudio-desktop-bin Rstudio`aur`
 - piclist-bin 图床工具`aur`
-- wechat-uos-bwrap 微信`aur`
+- wechat-universal-bwrap 微信`aur`
 - mambaforge 更快的 conda 包管理器`aur`
 - timeshift 系统快照
 
@@ -476,7 +490,7 @@ rmmod btusb
 modprobe btusb
 ```
 
-**可以导出系统安装的包，方便一键安装**
+**导出系统安装的包，方便一键安装**
 
 ```bash
 pacman -Qqen > packages-repository.txt   # 导出
