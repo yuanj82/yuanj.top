@@ -93,10 +93,11 @@ RNA-seq 中最常用的分析方法就是找出差异表达基因 (Differential 
 先创建 conda 虚拟环境，安装所需要的软件，可以自行手动安装，也可以直接导入我的 conda 环境：
 
 ```bash
-git clone https://github.com/yuanj82/genomics.git
-cd genomics
+git clone https://github.com/yuanj82/NGS-analysis.git
+cd NGS-analysis/environment
 cp .condarc ~/
-conda env create --file env.yml
+pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
+conda env create --file rna-seq-env.yml   # RNA-seq
 ```
 
 创建完成后激活环境就可以使用了：
