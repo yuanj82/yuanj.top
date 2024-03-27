@@ -1,27 +1,16 @@
 ---
-title: 表观遗传学之 Chip Seq
+title: 表观遗传学之 Chip-Seq
 tags:
   - "Genomics"
 slug: s2k2v7y2
 date: 2024-03-27T20:45:00+08:00
 ---
 
-染色质免疫沉淀-测序（ChIP-sequencing，简称 ChIP-seq）用于分析蛋白质与 DNA 的交互作用。此技术结合了染色质免疫沉淀（ChIP）和高通量 DNA 测序，旨在鉴定与 DNA 结合的蛋白质位点，从而精确绘制全基因组上目标蛋白的结合区域。在 ChIP-seq 出现之前，ChIP-on-chip 技术是研究蛋白质-DNA 相互作用的常用方法。
+染色质免疫沉淀-测序（Chip-sequencing，简称 Chip-seq）用于分析蛋白质与 DNA 的交互作用。此技术结合了染色质免疫沉淀（Chip）和高通量 DNA 测序，旨在鉴定与 DNA 结合的蛋白质位点，从而精确绘制全基因组上目标蛋白的结合区域。在 Chip-seq 出现之前，Chip-on-chip 技术是研究蛋白质-DNA 相互作用的常用方法。
 
 <!--more-->
 
-<!-- /TOC -->
-
-- [转录因子调控](#%E8%BD%AC%E5%BD%95%E5%9B%A0%E5%AD%90%E8%B0%83%E6%8E%A7)
-- [组蛋白修饰](#%E7%BB%84%E8%9B%8B%E7%99%BD%E4%BF%AE%E9%A5%B0)
-- [ATAC-seq 和 ChIP-seq](#atac-seq-%E5%92%8C-chip-seq)
-- [Chip-seq 的实验流程](#chip-seq-%E7%9A%84%E5%AE%9E%E9%AA%8C%E6%B5%81%E7%A8%8B)
-- [Chip-seq 的应用](#chip-seq-%E7%9A%84%E5%BA%94%E7%94%A8)
-- [参考资料](#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99)
-
-<!-- /TOC -->
-
-ChIP（染色质免疫沉淀）技术被用于鉴定蛋白质与 DNA 的相互作用。因此，当前的 ChIP-Seq 研究主要涉及两大类应用：转录因子的调控和组蛋白的修饰。
+Chip（染色质免疫沉淀）技术被用于鉴定蛋白质与 DNA 的相互作用。因此，当前的 Chip-Seq 研究主要涉及两大类应用：转录因子的调控和组蛋白的修饰。
 
 ## 转录因子调控
 
@@ -31,7 +20,7 @@ ChIP（染色质免疫沉淀）技术被用于鉴定蛋白质与 DNA 的相互�
 
 转录因子分为两类：通用转录因子和特异性转录因子。通用转录因子几乎在所有生物体细胞中都有存在。特异性转录因子在启动引发重大发育变化的基因表达模式中通常起着非常关键的作用。这些转录因子最显著的特点是都拥有 DNA 结合域，这使得它们能够与特定的 DNA 序列（称为增强子或启动子）上的 motif 结合。一些转录因子会与 DNA 上的启动子序列结合，靠近转录起始位点，从而帮助组装转录起始复合物。而其他转录因子则与调节序列，比如增强子序列，结合，它们能够刺激或抑制相关基因的转录活动。
 
-解析转录因子如何与 DNA 互作以调节基因表达的过程对于深入理解多种生物过程和疾病状态至关重要。在此过程中，ChIP-seq 技术能够发挥关键作用。
+解析转录因子如何与 DNA 互作以调节基因表达的过程对于深入理解多种生物过程和疾病状态至关重要。在此过程中，Chip-seq 技术能够发挥关键作用。
 
 ## 组蛋白修饰
 
@@ -61,7 +50,7 @@ ChIP（染色质免疫沉淀）技术被用于鉴定蛋白质与 DNA 的相互�
 - H3K4me3：代表 H3 组蛋白的第 4 位赖氨酸的三甲基化
 - H3K27ac：代表 H3 组蛋白的第 27 位赖氨酸的乙酰化
 
-组蛋白修饰应用于 ChIP-seq 分析领域，有助于解析表观遗传特征和生物学功能。表观基因组学联盟提出的五个“核心组蛋白标记”在 ChIP-seq 分析中得到了广泛应用：
+组蛋白修饰应用于 Chip-seq 分析领域，有助于解析表观遗传特征和生物学功能。表观基因组学联盟提出的五个“核心组蛋白标记”在 Chip-seq 分析中得到了广泛应用：
 
 - 与增强子区相关的 H3 赖氨酸 4 单甲基化（H3K4me1）或 H3 赖氨酸 27 乙酰化（H3K27ac）
 - H3 赖氨酸 4 三甲基化（H3K4me3），与启动子区域相关
@@ -71,9 +60,9 @@ ChIP（染色质免疫沉淀）技术被用于鉴定蛋白质与 DNA 的相互�
 
 详尽分析组蛋白修饰有助于更深入地理解发育和分化过程中的表观遗传机制。
 
-## ATAC-seq 和 ChIP-seq
+## ATAC-seq 和 Chip-seq
 
-ChIP-Seq 实验旨在验证一个特定的转录因子与 DNA 是否相互作用。在实验前，研究者已经确定了感兴趣的转录因子。通过设计针对该转录因子的抗体，进行 ChIP 实验以捕获与之结合的 DNA 片段。这种方法有助于鉴定特定蛋白质与 DNA 之间的相互作用。
+Chip-Seq 实验旨在验证一个特定的转录因子与 DNA 是否相互作用。在实验前，研究者已经确定了感兴趣的转录因子。通过设计针对该转录因子的抗体，进行 Chip 实验以捕获与之结合的 DNA 片段。这种方法有助于鉴定特定蛋白质与 DNA 之间的相互作用。
 
 相比之下，ATAC-Seq 技术不针对特定的转录因子，而是用于检测全基因组范围内染色质的开放程度。通过这种技术，可以在全基因组水平上识别可能与蛋白质结合的位点。将 ATAC-Seq 与其他方法结合使用，可以帮助研究者筛选出感兴趣的调控因子。
 
@@ -81,17 +70,17 @@ ChIP-Seq 实验旨在验证一个特定的转录因子与 DNA 是否相互作用
 
 ## Chip-seq 的实验流程
 
-ChIP（染色质免疫沉淀）实验的基本步骤大致如下：
+Chip（染色质免疫沉淀）实验的基本步骤大致如下：
 
 - 通过使用甲醛交联蛋白质和 DNA，确保它们结合，从而能够识别互作位点
 - 采用超声波技术对 DNA 链进行片段化处理
-- 进行染色质免疫沉淀，这是 ChIP 实验的核心环节。通过使用特异性抗体捕获目标蛋白，形成 DNA-蛋白质复合物，并进行孵育和离心，以收集免疫沉淀物
+- 进行染色质免疫沉淀，这是 Chip 实验的核心环节。通过使用特异性抗体捕获目标蛋白，形成 DNA-蛋白质复合物，并进行孵育和离心，以收集免疫沉淀物
 - 对 DNA 进行回收和纯化，这包括断裂蛋白质和 DNA 之间的交联，并提取出纯净的 DNA
-- 利用 qPCR 或 ChIP 测序等分析方法对实验结果进行进一步分析
+- 利用 qPCR 或 Chip 测序等分析方法对实验结果进行进一步分析
 
 ![](https://images.yuanj.top/202403272134216.png)
 
-通过测序获得的 DNA 片段被映射到参考基因组上。实际上，这些 DNA 片段是随机的。当靶蛋白结合的片段数量增加时，测序得到的数据量也会增加。因此，在特定位置检测到的 DNA 片段堆叠高度会随之增加。相反，如果在该位置没有蛋白结合，DNA 片段堆叠就会非常低。这些 DNA 片段的堆叠被称作峰（Peak）。在下图中，红色和蓝色的箭头分别表示基因组中正链和负链的映射方向。将两个峰合并后，就能得到最终的峰。这样，我们就得到了文章中常见的 ChIP-seq 峰图，其中 y 轴表示映射到的片段拷贝数，代表 ChIP-seq 的信号强度，而 x 轴表示基因组坐标。
+通过测序获得的 DNA 片段被映射到参考基因组上。实际上，这些 DNA 片段是随机的。当靶蛋白结合的片段数量增加时，测序得到的数据量也会增加。因此，在特定位置检测到的 DNA 片段堆叠高度会随之增加。相反，如果在该位置没有蛋白结合，DNA 片段堆叠就会非常低。这些 DNA 片段的堆叠被称作峰（Peak）。在下图中，红色和蓝色的箭头分别表示基因组中正链和负链的映射方向。将两个峰合并后，就能得到最终的峰。这样，我们就得到了文章中常见的 Chip-seq 峰图，其中 y 轴表示映射到的片段拷贝数，代表 Chip-seq 的信号强度，而 x 轴表示基因组坐标。
 
 ![](https://images.yuanj.top/202403272137537.png)
 
@@ -104,29 +93,10 @@ ChIP（染色质免疫沉淀）实验的基本步骤大致如下：
 
 ## 参考资料
 
-- [一文讲明白 ChIP-seq：高分文章里为什么做 ChIP-seq?](https://zhuanlan.zhihu.com/p/512151222)
-- [CHIP-Seq 的概念、应用场景、原理、分析流程](https://mp.weixin.qq.com/s/w30oHXpnBIHqhmr0NlUR_A)
+- [一文讲明白 Chip-seq：高分文章里为什么做 Chip-seq?](https://zhuanlan.zhihu.com/p/512151222)
+- [CHip-Seq 的概念、应用场景、原理、分析流程](https://mp.weixin.qq.com/s/w30oHXpnBIHqhmr0NlUR_A)
 - [Integrative analysis of 111 reference human epigenomes](https://www.nature.com/articles/nature14248)
-- [ChIP-seq 技术流程](https://mp.weixin.qq.com/s/uL5gErhaqvr4KVU8YdBQUQ)
-- [Profiling chromatin regulatory landscape: insights into the development of ChIP-seq and ATAC-seq](https://link.springer.com/article/10.1186/s43556-020-00009-w)
+- [Chip-seq 技术流程](https://mp.weixin.qq.com/s/uL5gErhaqvr4KVU8YdBQUQ)
+- [Profiling chromatin regulatory landscape: insights into the development of Chip-seq and ATAC-seq](https://link.springer.com/article/10.1186/s43556-020-00009-w)
 - [Transcription factors: an overview](https://pubmed.ncbi.nlm.nih.gov/9570129/)
-- [ChIP-Seq: advantages and challenges of a maturing technology](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3191340/)<!-- TOC -->
-<!-- TOC -->
-
-- [转录因子调控](#%E8%BD%AC%E5%BD%95%E5%9B%A0%E5%AD%90%E8%B0%83%E6%8E%A7)
-- [组蛋白修饰](#%E7%BB%84%E8%9B%8B%E7%99%BD%E4%BF%AE%E9%A5%B0)
-- [ATAC-seq 和 ChIP-seq](#atac-seq-%E5%92%8C-chip-seq)
-- [Chip-seq 的实验流程](#chip-seq-%E7%9A%84%E5%AE%9E%E9%AA%8C%E6%B5%81%E7%A8%8B)
-- [Chip-seq 的应用](#chip-seq-%E7%9A%84%E5%BA%94%E7%94%A8)
-- [参考资料](#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99)
-
-<!-- /TOC --><!-- TOC -->
-
-- [转录因子调控](#%E8%BD%AC%E5%BD%95%E5%9B%A0%E5%AD%90%E8%B0%83%E6%8E%A7)
-- [组蛋白修饰](#%E7%BB%84%E8%9B%8B%E7%99%BD%E4%BF%AE%E9%A5%B0)
-- [ATAC-seq 和 ChIP-seq](#atac-seq-%E5%92%8C-chip-seq)
-- [Chip-seq 的实验流程](#chip-seq-%E7%9A%84%E5%AE%9E%E9%AA%8C%E6%B5%81%E7%A8%8B)
-- [Chip-seq 的应用](#chip-seq-%E7%9A%84%E5%BA%94%E7%94%A8)
-- [参考资料](#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99)
-
-<!-- /TOC -->
+- [Chip-Seq: advantages and challenges of a maturing technology](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3191340/)<!-- TOC -->

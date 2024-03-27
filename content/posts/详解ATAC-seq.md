@@ -11,18 +11,6 @@ ATAC-seq，全称 Assay for Transposase-Accessible Chromatin with high throughpu
 
 <!--more-->
 
-<!-- TOC -->
-
-- [研究开放染色质区域的技术](#%E7%A0%94%E7%A9%B6%E5%BC%80%E6%94%BE%E6%9F%93%E8%89%B2%E8%B4%A8%E5%8C%BA%E5%9F%9F%E7%9A%84%E6%8A%80%E6%9C%AF)
-- [ATAC-seq 技术](#atac-seq-%E6%8A%80%E6%9C%AF)
-- [ATAC-seq 实验流程](#atac-seq-%E5%AE%9E%E9%AA%8C%E6%B5%81%E7%A8%8B)
-- [ATAC-seq 技术的优势](#atac-seq-%E6%8A%80%E6%9C%AF%E7%9A%84%E4%BC%98%E5%8A%BF)
-- [ATAC-seq 技术的应用](#atac-seq-%E6%8A%80%E6%9C%AF%E7%9A%84%E5%BA%94%E7%94%A8)
-- [ATAC-seq 的技术限制](#atac-seq-%E7%9A%84%E6%8A%80%E6%9C%AF%E9%99%90%E5%88%B6)
-- [参考资料](#%E5%8F%82%E8%80%83%E8%B5%84%E6%96%99)
-
-<!-- /TOC -->
-
 真核生物的核 DNA 并不是裸露的，而是组蛋白与之结合。DNA 一圈一圈地缠绕在 8 个组蛋白上，形成核小体，每个核小体占了约 147bp 的 DNA。一个个核小体构成了串珠样的结构，然后进一步折叠、聚合，并在其他架构蛋白的协助下，形成染色体。这样就能将超长的 DNA 链，折叠成很小很小的结构，塞进小小的细胞核里。
 
 ![](https://images.yuanj.top/202403081311394.png)
