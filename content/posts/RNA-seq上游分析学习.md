@@ -4,7 +4,7 @@ tags:
   - "Genomics"
   - "Bioinformatics"
 slug: z6q5z7s5
-date: 2023-09-07T17:16:07+08:00
+date: 2024-03-27T17:16:07+08:00
 ---
 
 转录组测序的研究对象为特定细胞在某一功能状态下所能转录出来的所有 RNA 的总和，包括 mRNA 和非编码 RNA，相对于传统的芯片杂交平台，转录组测序无需预先针对已知序列设计探针，即可对任意物种的整体转录活动进行检测，提供更准确的数字化信号，更高的检测通量以及更广泛的检测范围，是目前深入研究转录组复杂性的强大工具，基于高通量测序平台的转录组测序技术能够全面获得物种特定组织或器官的转录本信息，从而进行基因表达水平研究、新转录本发现研究、转录本结构变异研究等。
@@ -55,8 +55,9 @@ RNA-seq 中最常用的分析方法就是找出差异表达基因 (Differential 
 只需要使用 conda 就可以安装所有需要的软件，主要使用的软件有以下一些
 
 - sra-tools：快速下载 NCBI SRA 数据
-- FastQc：测序数据质量检测与控制
-- Trimmomatic： 过滤低质量序列
+- fastQc：测序数据质量检测与控制
+- multiqc：合并质量检测报告
+- trimmomatic： 过滤低质量序列
 - hisat2：转录组数据的比对
 - samtools：对 hisat2 比对的结果进行排序和压缩
 - featureCounts：对基因的信息进行计数统计
@@ -86,6 +87,7 @@ conda install bioconda::trimmomatic
 conda install bioconda::samtools
 conda install bioconda::hisat2
 conda install bioconda::subread
+conda install bioconda::multiqc
 ```
 
 ## 数据获取与预处理
@@ -148,7 +150,7 @@ fastq-dump --gzip --split-3 SRR25909836.sra
 ```bash
 #!/bin/bash
 mkdir SRR
-cat SRR_Acc_List.txt | while read id; do mv -f $id/$id.sra  ./SRR; done
+cat SRR_Acc_List.txt | while read id; do mv -f $id/$id.sra ./SRR; done
 cd SRR
 for i in *sra
 do
@@ -205,6 +207,7 @@ fastqc SRR25909836_1.fastq.gz
 
 ```bash
 nohup fastqc SRR*.fastq.gz &
+multiqc ./fastqc_report # 将多个质量检测报告合并
 ```
 
 程序运行完成后会输出一堆 html 文件和 zip 压缩包，html 是网页版报告，zip 是本地宝报告，下载到本地用浏览器打开就可以看到质量检测报告了
@@ -374,7 +377,7 @@ fastqc 抽取 reads 文件前 200,000 条 reads 统计其重复情况，重复�
 我使用的是下面的命令，需要根据自己的文件进行调整
 
 ```bash
-trimmomatic PE -threads 1 -phred33 SRR25909836_1.fastq.gz SRR25909836_2.fastq.gz -summary oryza_sativa.summary -baseout SRR25909836.fastq.gz LEADING:3 TRAILING:3 SLIDINGWINDOW:5:20 HEADCROP:13 MINLEN:36
+trimmomatic PE -threads 1 -phred33 SRR25909836_1.fastq.gz SRR25909836_2.fastq.gz -summary SRR25909836.summary -baseout SRR25909836.fastq.gz LEADING:3 TRAILING:3 SLIDINGWINDOW:5:20 HEADCROP:13 MINLEN:36
 ```
 
 解释一下这些参数
@@ -439,10 +442,10 @@ hisat2-build -p 4 oryza_sativa.fa oryza_sativa
 
 ### 进行比对
 
-我使用的命令如下
+我使用的命令如下（使用经过过滤的测序数据）：
 
 ```bash
-hisat2 -x oryza_sativa/oryza_sativa -p 5 -1 SRR25909836_1.fastq.gz S-2 RR25909836_2.fastq.gz -S oryza_sativa.sam
+hisat2 -x oryza_sativa/oryza_sativa -p 5 -1 SRR25909836_1P.fastq.gz -2 RR25909836_2P.fastq.gz -S SRR25909836.sam
 ```
 
 注意-x 后跟索引文件，不加拓展名，保证 ht2 文件和 fa 文件的文件名一致即可，这里由于前面过滤后的序列是没有拓展名的，所以会提示 Warning: Unsupported file format，不影响结果
@@ -511,7 +514,7 @@ z -S oryza_sativa.sam
 我使用的是以下命令
 
 ```bash
-samtools sort -n -@ 5 oryza_sativa.sam -o oryza_sativa.bam
+samtools sort -n -@ 5 SRR25909836.sam -o SRR25909836.bam
 ```
 
 运行完成后会得到一个 bam 文件
@@ -535,7 +538,7 @@ samtools sort -n -@ 5 oryza_sativa.sam -o oryza_sativa.bam
 我使用的是以下命令
 
 ```bash
-featureCounts -T 5 -t exon -g Name -a oryza_sativa.gff3 -o gene_name.counts -p oryza_sativa
+featureCounts -T 5 -t exon -g Name -a oryza_sativa.gff3 -o gene_name.counts -p SRR25909836.bam
 ```
 
 oryza_sativa.gff3 就是最初下载的注释文件，如果要统计多个文件的话，在-p 后面跟上就可以，会生成 gene_name.counts、gene_name.counts.summary 两个文件，
@@ -548,7 +551,7 @@ gene_name.counts 文件是基因的具体信息
 
 ![](https://images.yuanj.top/20230907203131.png)
 
-我这里只有一组数据，所以数量统计也只有一列，通常做 RNA-Seq 时是需要多组数据进行分析的
+我这里只有一组数据，所以数量统计也只有一列，通常做 RNA-Seq 时是需要多组数据进行分析的，将 bam 文件跟在-p 参数后面即可。
 
 ## 参考
 

@@ -4,7 +4,7 @@ tags:
   - "Genomics"
   - "Bioinformatics"
 slug: j9t9v3y1
-date: 2023-09-08T20:29:36+08:00
+date: 2024-03-30T20:29:36+08:00
 ---
 
 之前那一篇文章主要讲的是一些知识与工具的用法，这次用六组数据进行分析，得到基因表达矩阵。
@@ -59,13 +59,13 @@ mkdir fastqc_report
 fastqc SRR2590778*.fastq.gz -o ./fastqc_report
 ```
 
-完成之后，将检测报告进行压缩，以便下载查看
+完成之后，将检测报告进行合并，以便查看
 
 ```bash
-zip -r fastqc_report.zip fastqc_report/*.html
+multiqc ./fastqc_report
 ```
 
-依据检测报告对序列进行过滤，参数之前已经讲过，这里数据比较多，写一个 bash 脚本的 for 循环
+依据检测报告对序列进行过滤，参数之前已经讲过，这里数据比较多，写一个 bash 脚本的 for 循环：
 
 ```bash
 #!/bin/bash
@@ -74,6 +74,8 @@ do
     trimmomatic PE -threads 1 -phred33 SRR2590778${i}_1.fastq.gz SRR2590778${i}_2.fastq.gz -summary oryza_sativa_${i}.summary -baseout SRR2590778${i}.fastq.gz LEADING:3 TRAILING:3 SLIDINGWINDOW:5:20 HEADCROP:15 MINLEN:36
 done
 ```
+
+这里是对 SRR25907783 到 SRR25907788 的数据进行处理，根据自己数据的情况将这里进行修改即可
 
 下载水稻的参考基因组和注释文件进行 hisat2 比对
 
@@ -104,7 +106,7 @@ hisat2-build oryza_sativa.fa oryza_sativa
 #!/bin/bash
 for i in {3..8}
 do
-    hisat2 -x hisat2_index/oryza_sativa -p 5 -1 SRR2590778${i}_1P.fastq.gz -2 SRR2590778${i}_2P.fastq.gz -S oryza_sativa_${i}.sam
+    hisat2 -x hisat2_index/oryza_sativa -p 5 -1 SRR2590778${i}_1P.fastq.gz -2 SRR2590778${i}_2P.fastq.gz -S SRR2590778_${i}.sam
 done
 ```
 
@@ -114,7 +116,7 @@ done
 #!/bin/bash
 for i in {3..8}
 do
-    samtools sort -n -@ 5 oryza_sativa_${i}.sam -o oryza_sativa_${i}
+    samtools sort -n -@ 5 SRR2590778_${i}.sam -o SRR2590778_${i}
 done
 ```
 
@@ -122,7 +124,7 @@ done
 
 ```bash
 #!/bin/bash
-bam_files=(*.bam)
+bam_files=(*.bam)  # 将所有的 bam 文件作为变量，输入给 featureCounts
 
 if [ ${#bam_files[@]} -gt 0 ]; then
     featureCounts -T 5 -t exon -g Name -a Lolium_perenne.gff3 -o  gene.counts -p "${bam_files[@]}"
