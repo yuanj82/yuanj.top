@@ -2,7 +2,6 @@
 title: Arch 安装记录
 tags:
   - "Linux"
-  - "Arch"
 slug: n2f9s6o0
 date: 2024-03-20T18:30:31+08:00
 ---

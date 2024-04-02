@@ -2,7 +2,6 @@
 title: 修复 Debian 下 wine 应用没有图标的问题
 tags:
   - "Linux"
-  - "Debian"
 slug: i8k9s3o3
 date: 2024-01-06T16:28:15+08:00
 ---

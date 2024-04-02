@@ -1,7 +1,6 @@
 ---
 title: 当我换上了 Debian12 Linux
 tags:
-  - "Debian"
   - "Linux"
 slug: a5q9j1e7
 date: 2024-01-02T12:59:49+08:00

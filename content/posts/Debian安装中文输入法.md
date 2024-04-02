@@ -2,7 +2,6 @@
 title: Debian 安装中文输入法
 tags:
   - "Linux"
-  - "Debian"
 slug: z9g0s6i9
 date: 2023-12-29T19:00:19+08:00
 ---

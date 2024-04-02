@@ -1,7 +1,6 @@
 ---
 title: Arch 更换内核
 tags:
-  - "Arch"
   - "Linux"
 slug: r3n6d5o8
 date: 2024-03-25T21:22:26+08:00

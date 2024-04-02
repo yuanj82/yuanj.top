@@ -2,7 +2,6 @@
 title: Debian 安装常用软件
 tags:
   - "Linux"
-  - "Debian"
 slug: r3q5q3t1
 date: 2023-12-29T18:38:45+08:00
 ---

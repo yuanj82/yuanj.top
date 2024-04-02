@@ -2,7 +2,6 @@
 title: 修复 WPS 伪粗体问题与 PDF 导出错误问题
 tags:
   - "Linux"
-  - "Arch"
 slug: y9p0e8u7
 date: 2024-03-20T22:04:23+08:00
 ---

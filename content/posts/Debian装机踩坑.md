@@ -2,8 +2,6 @@
 title: Debian 装机踩坑
 tags:
   - "Linux"
-  - "Nvidia"
-  - "Debian"
 slug: n2l6i3c4
 date: 2023-12-29T18:08:05+08:00
 ---

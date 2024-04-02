@@ -2,7 +2,6 @@
 title: Debian 编译安装最新版 R
 tags:
   - "Linux"
-  - "Debian"
   - "R"
 slug: f5a4q5l4
 date: 2023-12-29T18:54:30+08:00
