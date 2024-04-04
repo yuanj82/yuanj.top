@@ -538,16 +538,16 @@ samtools sort -n -@ 5 SRR25909836.sam -o SRR25909836.bam
 我使用的是以下命令
 
 ```bash
-featureCounts -T 5 -t exon -g Name -a oryza_sativa.gff3 -o gene_name.counts -p SRR25909836.bam
+featureCounts -T 5 -t exon -g Name -a oryza_sativa.gff3 -o counts -p SRR25909836.bam
 ```
 
-oryza_sativa.gff3 就是最初下载的注释文件，如果要统计多个文件的话，在-p 后面跟上就可以，会生成 gene_name.counts、gene_name.counts.summary 两个文件，
+oryza_sativa.gff3 就是最初下载的注释文件，如果要统计多个文件的话，在-p 后面跟上就可以，会生成 counts、counts.summary 两个文件，
 
-gene_name.counts.summary 文件是计数统计情况
+counts.summary 文件是计数统计情况
 
 ![](https://images.yuanj.top/20230907202859.png)
 
-gene_name.counts 文件是基因的具体信息
+counts 文件是基因的具体信息
 
 ![](https://images.yuanj.top/20230907203131.png)
 
