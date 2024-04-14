@@ -115,10 +115,10 @@ umount /mnt
 按照以下顺序挂载分区：
 
 ```bash
-mkdir /mnt/home # 创建 /home 目录
-mkdir -p /mnt/boot # 创建 /boot 目录
 mount -t btrfs -o subvol=/@,compress=zstd /dev/nvme0n1p2 /mnt # 挂载 / 目录
+mkdir -p /mnt/home # 创建 /home 目录
 mount -t btrfs -o subvol=/@home,compress=zstd /dev/nvme0n1p2 /mnt/home # 挂载 /home 目录
+mkdir -p /mnt/boot # 创建 /boot 目录
 mount /dev/nvme0n1p1 /mnt/boot # 挂载 /boot 目录
 ```
 
