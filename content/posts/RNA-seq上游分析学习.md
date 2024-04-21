@@ -68,14 +68,13 @@ RNA-seq 中最常用的分析方法就是找出差异表达基因 (Differential 
 git clone https://github.com/yuanj82/NGS-analysis.git
 cd NGS-analysis/environment
 cp .condarc ~/
-pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 conda env create --file rna-seq-env.yml   # RNA-seq
 ```
 
 创建完成后激活环境就可以使用了：
 
 ```bash
-conda activate genomics
+conda activate rna-seq
 ```
 
 如果想自己安装也可以，用下列命令就可以：
