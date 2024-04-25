@@ -74,7 +74,7 @@ scoop bucket add dorado https://github.com/chawyehsu/dorado
 
 主要的开发工具还是用 VScode，这玩意是在是万金油，我主要用 R 和 Python，加上现在学 C 语言，都可以用 VScode，C 语言的话用 cmake 插件或者用 gcc 编译即可，Python 更方便，官方插件就可以识别解释器路径，而 R 语言需要配置一下。
 
-在~目录新建一个。Rprofile 文件，写入以下内容：
+在~目录（即用户目录）新建一个 .Rprofile 文件，写入以下内容：
 
 ```r
 if (interactive() && Sys.getenv("TERM_PROGRAM") == "vscode") {
@@ -113,7 +113,7 @@ options(BioC_mirror="https://mirrors.tuna.tsinghua.edu.cn/bioconductor")
 "terminal.integrated.defaultProfile.windows": "Bash",
 ```
 
-这里备份一下我的`settings.json`吧：
+这里贴一下我的`settings.json`吧（这个配置文件里面信息还是比较多的）：
 
 ```json
 {
@@ -230,7 +230,18 @@ yt-dlp           2024.04.09       main   2024-04-24 08:38:37 Global install
 zotero           6.0.36           extras 2024-04-24 09:27:45 Global install
 ```
 
-总之感觉是挺舒服的~
+scoop 常用的命令其实也就几个：
+
+```bash
+scoop install 软件包名   # 安装软件
+scoop uninstall 软件包名 # 卸载软件
+scoop update 软件包名    # 更新软件
+scoop info 软件包名      # 查看软件信息
+scoop cache rm *        # 清理缓存
+scoop update            # 更新 scoop 和 buckets
+```
+
+不需要再一个个下载安装包一直点下一步了。总之感觉是挺舒服的~
 
 ![](https://images.yuanj.top/202404251307232.png)
 
