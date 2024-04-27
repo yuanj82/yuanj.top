@@ -1,9 +1,9 @@
 ---
 title: TBtools 完成论文复现
 tags:
-  - "TAG1"
-  - "TAG2"
-slug: 
+  - "TBtools"
+  - "Bioinformatics"
+slug: t4x3s5r5
 date: 2024-04-27T09:21:30+08:00
 ---
 
