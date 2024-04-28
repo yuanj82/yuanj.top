@@ -2,8 +2,6 @@
 title: 友链
 ---
 
-##### Recommend
-
 - [Ethan.Tzy](https://fe32.top)
 - [安知鱼](https://blog.anheyu.com)
 - [Fomalhaut🥝](https://www.fomal.cc)
@@ -14,9 +12,6 @@ title: 友链
 - [小冰博客](https://zfe.one)
 - [Akilar の糖果屋](https://akilar.top)
 - [Startly](https://startcrtly.org)
-
-##### Partner
-
 - [Ariasaka の小窝](https://yisous.xyz)
 - [Black Flies](https://www.yyyzyyyz.cn)
 - [CC 康纳百川](https://blog.ccknbc.cc)
@@ -34,6 +29,8 @@ title: 友链
 - [Ljohn's Blog](https://www.ljohn.cn)
 - [By 烟花易冷](https://www.zzfly.net)
 - [维燕的知识花园](https://weiyan.cc)
+- [一个夏天的年少](http://www.zhuangqingyuan.site)
+- [Jayden's site](https://xxu.do)
 
 ##### Add me
 
