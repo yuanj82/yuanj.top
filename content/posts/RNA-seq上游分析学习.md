@@ -149,11 +149,11 @@ fastq-dump --gzip --split-3 SRR25909836.sra
 ```bash
 #!/bin/bash
 mkdir SRR
-cat SRR_Acc_List.txt | while read id; do mv -f $id/$id.sra ./SRR; done
+cat SRR_Acc_List.txt | while read id; do mv -f ${id}/${id}.sra ./SRR; done
 cd SRR
 for i in *sra
 do
-	fastq-dump --gzip --split-3 $i -f ../fastqgz
+	fastq-dump --gzip --split-3 ${i} -f ../fastqgz
 done
 ```
 
@@ -185,7 +185,9 @@ mv Oryza_sativa.IRGSP-1.0.57.gff3 oryza_sativa.gff3
 
 ### 常用参数
 
+```bash
 fastqc [-o output dir] [--(no)extract] [-f fastq|bam|sam] [-c contaminant file] seqfile1 .. seqfileN
+```
 
 - -o --outdir：FastQC 生成的报告文件的储存路径，生成的报告的文件名是根据输入来定的
 - --extract：生成的报告默认会打包成 1 个压缩文件，使用这个参数是让程序不打包
