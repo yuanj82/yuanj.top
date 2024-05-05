@@ -20,14 +20,14 @@ title: README
 ## 你可以在这里留言
 
 <!-- <script src="https://utteranc.es/client.js"
-        repo="yuanj82/blog"
+        repo="yuanj82/yuanj.top"
         issue-term="title"
         theme="github-light"
         crossorigin="anonymous"
         async>
 </script> -->
 <script src="https://giscus.app/client.js"
-        data-repo="yuanj82/blog"
+        data-repo="yuanj82/yuanj.top"
         data-repo-id="R_kgDOKXKUsQ"
         data-category="Announcements"
         data-category-id="DIC_kwDOKXKUsc4CZj38"
