@@ -31,6 +31,7 @@ title: 友链
 - [维燕的知识花园](https://weiyan.cc)
 - [一个夏天的年少](http://www.zhuangqingyuan.site)
 - [Jayden's site](https://xxu.do)
+- [种田佬记录下生活的美好时刻](https://www.wuyuankang.website)
 
 ##### Add me
 

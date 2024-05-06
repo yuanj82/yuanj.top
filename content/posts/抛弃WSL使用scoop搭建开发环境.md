@@ -166,68 +166,72 @@ echo "set t_vb=" >> ~/.vimrc
 ```txt
 Installed apps:
 
-Name             Version          Source Updated             Info
-----             -------          ------ -------             ----
-7zip             23.01            main   2024-04-24 07:59:49
-coreutils        5.97.3           main   2024-04-24 10:04:16
-dark             3.14             main   2024-04-24 10:58:10
-dismplusplus     10.1.1002.1B     extras 2024-04-24 08:27:10
-gcc              13.2.0           main   2024-04-24 08:29:06
-gdb              14.1             main   2024-04-24 08:29:15
-git              2.44.0           main   2024-04-24 08:00:34
-honeyview        5.51             extras 2024-04-24 08:44:32
-hugo             0.125.3          main   2024-04-24 08:29:19
-innounp          0.50             main   2024-04-24 08:29:21
-lxmusic          2.7.0            dorado 2024-04-24 08:36:47
-mpv              0.38.0           extras 2024-04-24 08:37:45
-neofetch         7.1.0            main   2024-04-24 08:34:48
-notepadplusplus  8.6.5            extras 2024-04-24 08:27:30
-obsidian         1.5.12           extras 2024-04-24 13:48:55
-piclist          2.8.3            lemon  2024-04-24 08:37:01
-python           3.12.3           main   2024-04-24 10:58:22
-qqnt             9.9.9.240422     dorado 2024-04-24 08:24:28
-r                4.3.3            main   2024-04-24 08:29:47
-rstudio          2023.12.1-402    extras 2024-04-24 08:35:22
-rtools           4.3.5958.5975    main   2024-04-24 08:34:21
-snipaste-beta    2.8.8-Beta       dorado 2024-04-24 08:37:06
-sumatrapdf       3.5.2            extras 2024-04-24 08:37:10
-vim              9.1.0366         main   2024-04-24 08:35:29
-vimtutor         0.2018.07.25     main   2024-04-24 08:37:11
-vscode           1.88.1           extras 2024-04-24 08:27:58
-wechat-np        nightly-20240424 dorado 2024-04-24 08:26:00
-windows-terminal 1.19.10821.0     extras 2024-04-24 08:28:46
-yt-dlp           2024.04.09       main   2024-04-24 08:38:37
-zotero           6.0.36           extras 2024-04-24 09:27:45
-7zip             23.01            main   2024-04-24 07:59:49 Global install
-coreutils        5.97.3           main   2024-04-24 10:04:16 Global install
-dark             3.14             main   2024-04-24 10:58:10 Global install
-dismplusplus     10.1.1002.1B     extras 2024-04-24 08:27:10 Global install
-gcc              13.2.0           main   2024-04-24 08:29:06 Global install
-gdb              14.1             main   2024-04-24 08:29:15 Global install
-git              2.44.0           main   2024-04-24 08:00:34 Global install
-honeyview        5.51             extras 2024-04-24 08:44:32 Global install
-hugo             0.125.3          main   2024-04-24 08:29:19 Global install
-innounp          0.50             main   2024-04-24 08:29:21 Global install
-lxmusic          2.7.0            dorado 2024-04-24 08:36:47 Global install
-mpv              0.38.0           extras 2024-04-24 08:37:45 Global install
-neofetch         7.1.0            main   2024-04-24 08:34:48 Global install
-notepadplusplus  8.6.5            extras 2024-04-24 08:27:30 Global install
-obsidian         1.5.12           extras 2024-04-24 13:48:55 Global install
-piclist          2.8.3            lemon  2024-04-24 08:37:01 Global install
-python           3.12.3           main   2024-04-24 10:58:22 Global install
-qqnt             9.9.9.240422     dorado 2024-04-24 08:24:28 Global install
-r                4.3.3            main   2024-04-24 08:29:47 Global install
-rstudio          2023.12.1-402    extras 2024-04-24 08:35:22 Global install
-rtools           4.3.5958.5975    main   2024-04-24 08:34:21 Global install
-snipaste-beta    2.8.8-Beta       dorado 2024-04-24 08:37:06 Global install
-sumatrapdf       3.5.2            extras 2024-04-24 08:37:10 Global install
-vim              9.1.0366         main   2024-04-24 08:35:29 Global install
-vimtutor         0.2018.07.25     main   2024-04-24 08:37:11 Global install
-vscode           1.88.1           extras 2024-04-24 08:27:58 Global install
-wechat-np        nightly-20240424 dorado 2024-04-24 08:26:00 Global install
-windows-terminal 1.19.10821.0     extras 2024-04-24 08:28:46 Global install
-yt-dlp           2024.04.09       main   2024-04-24 08:38:37 Global install
-zotero           6.0.36           extras 2024-04-24 09:27:45 Global install
+Name              Version          Source Updated             Info
+----              -------          ------ -------             ----
+7zip              23.01            main   2024-05-04 15:06:19
+coreutils         5.97.3           main   2024-05-04 15:07:45
+dark              3.14             main   2024-05-04 15:13:18
+dismplusplus      10.1.1002.1B     extras 2024-05-04 15:11:45
+everything        1.4.1.1024       extras 2024-05-04 15:34:35
+gcc               13.2.0           main   2024-05-04 15:12:13
+gdb               14.1             main   2024-05-04 15:12:24
+git               2.45.0           main   2024-05-04 15:07:11
+hibit-uninstaller 3.2.10           extras 2024-05-04 16:09:51
+hugo              0.125.5          main   2024-05-04 15:12:28
+innounp           0.50             main   2024-05-04 15:14:09
+irfanview         4.67             extras 2024-05-06 10:30:57
+llvm              18.1.4           main   2024-05-05 09:01:43
+lxmusic           2.7.0            dorado 2024-05-04 15:12:41
+mambaforge        24.3.0-0         extras 2024-05-04 20:01:02
+mpv               0.38.0           extras 2024-05-04 15:12:50
+neofetch          7.1.0            main   2024-05-04 15:12:51
+notepadplusplus   8.6.5            extras 2024-05-04 15:12:55
+piclist           2.8.4            lemon  2024-05-04 15:13:15
+python            3.12.3           main   2024-05-04 15:13:43
+qqnt              9.9.9.240428     dorado 2024-05-04 15:14:07
+r                 4.4.0            main   2024-05-04 15:35:14
+rtools            4.4.6104.6039    main   2024-05-04 15:19:44
+snipaste-beta     2.9-Beta         dorado 2024-05-04 15:20:01
+sumatrapdf        3.5.2            extras 2024-05-04 15:20:05
+vim               9.1.0            main   2024-05-04 15:36:11
+vimtutor          0.2018.07.25     main   2024-05-04 15:35:15
+vscode            1.89.0           extras 2024-05-04 15:20:30
+wechat-np         nightly-20240504 dorado 2024-05-04 15:21:55
+windows-terminal  1.19.11213.0     extras 2024-05-04 15:08:20
+yt-dlp            2024.04.09       main   2024-05-04 15:35:21
+zotero            6.0.36           extras 2024-05-04 15:22:05
+7zip              23.01            main   2024-05-04 15:06:19 Global install
+coreutils         5.97.3           main   2024-05-04 15:07:45 Global install
+dark              3.14             main   2024-05-04 15:13:18 Global install
+dismplusplus      10.1.1002.1B     extras 2024-05-04 15:11:45 Global install
+everything        1.4.1.1024       extras 2024-05-04 15:34:35 Global install
+gcc               13.2.0           main   2024-05-04 15:12:13 Global install
+gdb               14.1             main   2024-05-04 15:12:24 Global install
+git               2.45.0           main   2024-05-04 15:07:11 Global install
+hibit-uninstaller 3.2.10           extras 2024-05-04 16:09:51 Global install
+hugo              0.125.5          main   2024-05-04 15:12:28 Global install
+innounp           0.50             main   2024-05-04 15:14:09 Global install
+irfanview         4.67             extras 2024-05-06 10:30:57 Global install
+llvm              18.1.4           main   2024-05-05 09:01:43 Global install
+lxmusic           2.7.0            dorado 2024-05-04 15:12:41 Global install
+mambaforge        24.3.0-0         extras 2024-05-04 20:01:02 Global install
+mpv               0.38.0           extras 2024-05-04 15:12:50 Global install
+neofetch          7.1.0            main   2024-05-04 15:12:51 Global install
+notepadplusplus   8.6.5            extras 2024-05-04 15:12:55 Global install
+piclist           2.8.4            lemon  2024-05-04 15:13:15 Global install
+python            3.12.3           main   2024-05-04 15:13:43 Global install
+qqnt              9.9.9.240428     dorado 2024-05-04 15:14:07 Global install
+r                 4.4.0            main   2024-05-04 15:35:14 Global install
+rtools            4.4.6104.6039    main   2024-05-04 15:19:44 Global install
+snipaste-beta     2.9-Beta         dorado 2024-05-04 15:20:01 Global install
+sumatrapdf        3.5.2            extras 2024-05-04 15:20:05 Global install
+vim               9.1.0            main   2024-05-04 15:36:11 Global install
+vimtutor          0.2018.07.25     main   2024-05-04 15:35:15 Global install
+vscode            1.89.0           extras 2024-05-04 15:20:30 Global install
+wechat-np         nightly-20240504 dorado 2024-05-04 15:21:55 Global install
+windows-terminal  1.19.11213.0     extras 2024-05-04 15:08:20 Global install
+yt-dlp            2024.04.09       main   2024-05-04 15:35:21 Global install
+zotero            6.0.36           extras 2024-05-04 15:22:05 Global install
 ```
 
 scoop 常用的命令其实也就几个：
