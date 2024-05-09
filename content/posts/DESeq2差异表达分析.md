@@ -2,7 +2,6 @@
 title: DESeq2 差异表达分析
 tags:
   - "R"
-  - "DESeq2"
 slug: i2b2p5m1
 date: 2023-11-24T21:56:13+08:00
 ---
