@@ -42,7 +42,7 @@ html {
 }
 
 body {
-	font-family: 'trebuchet ms', verdana, helvetica, arial, sans-serif;
+	/* font-family: 'trebuchet ms', verdana, helvetica, arial, sans-serif; */
 	margin: 0;
 	font-size: 14px;
 	font-size: .875rem;
@@ -959,7 +959,7 @@ textarea {
 .widget-misc__link {
 	display: block;
 	white-space: normal;
-	font-weight: normal;
+	font-weight: bold;
 }
 
 .widget-misc__link-icon {
