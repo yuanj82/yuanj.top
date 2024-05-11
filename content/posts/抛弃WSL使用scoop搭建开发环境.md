@@ -160,6 +160,16 @@ echo "set noerrorbells" >> ~/.vimrc
 echo "set t_vb=" >> ~/.vimrc
 ```
 
+直接关闭 Windows Terminal 的时候，bash 没法记住 history，找到`C:\Scoop\apps\git\current\etc\bash.bashrc`，添加以下内容：
+
+```bash
+HISTFILESIZE=400000000
+HISTSIZE=10000
+PROMPT_COMMAND="history -a"
+export HISTSIZE PROMPT_COMMAND
+shopt -s histappend
+```
+
 再贴一下我的 scoop 软件列表吧：
 
 ```txt

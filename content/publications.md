@@ -6,16 +6,10 @@ title: Publications
 - Wu L, Wang R, Li M, Du Z, Jin Y, Shi Y, Jiang W, Chen J, **Jiao Y**, Hu B, Huang J. Functional analysis of a rice 12-oxo-phytodienoic acid reductase gene (OsOPR1) involved in Cd stress tolerance. Mol Biol Rep. 2024 Jan 25;51(1):198.
 - Tong J, Wu L, Li B, Jiang N, Huang J, Wu D, Zhou L, Yang Q, **Jiao Y**, Chen J,Zhao K, Pei X. image-based vegetation analysis of desertified area by using a combination of imageJ and Photoshop software. Environ Monit Assess. 2024 Feb 26;196(3):306. doi: 10.1007/s10661-024-12479-4. PMID: 38407649.
 
-## **论文复现**
+## **Papers reproduction**
 
-**A phosphate starvation response-regulated receptor-like kinase, OsADK1, is required for mycorrhizal symbiosis and phosphate starvation responses**
-- 复现了文章的 RNA-seq 与 DAP-seq 数据分析部分
-- 复现过程：github.com/yuanj82/OsPHR-NGS
+- [**A phosphate starvation response-regulated receptor-like kinase, OsADK1, is required for mycorrhizal symbiosis and phosphate starvation responses**](https://github.com/yuanj82/OsPHR-NGS)
 
-**Identification and expression pattern analysis of the OsSnRK2 gene family in rice**
-- 复现了文章的生物信息学分析部分
-- 复现过程：github.com/yuanj82/OsSnRK2-GFI
+- [**Identification and expression pattern analysis of the OsSnRK2 gene family in rice**](https://github.com/yuanj82/OsSnRK2-GFI)
 
-**Integrated ATAC‐seq and RNA‐seq data analysis identifies transcription factors related to rice stripe virus infection in Oryza sativa**
-- 复现了文章的 RNA-seq 与 ATAC-seq 数据分析部分
-- 复现过程：github.com/yuanj82/OsWRKY-NGS
+- [**Integrated ATAC‐seq and RNA‐seq data analysis identifies transcription factors related to rice stripe virus infection in Oryza sativa**](https://github.com/yuanj82/OsWRKY-NGS)
