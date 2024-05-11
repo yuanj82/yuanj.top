@@ -23,13 +23,13 @@ theme = ["hugo-search-fuse-js", "cloud"]
     title = "README"
     url = "/readme"
   [[Params.widgets.misc.custom]]
-    title = "搜索"
+    title = "Search"
     url = "/search"
   [[Params.widgets.misc.custom]]
-    title = "友链"
-    url = "/links"
+    title = "Publications"
+    url = "/publications"
   [[Params.widgets.misc.custom]]
-    title = "用Email联系我"
+    title = "E-mail"
     url = "/images/email.png"
   [[Params.widgets.misc.custom]]
     title = "GitHub"

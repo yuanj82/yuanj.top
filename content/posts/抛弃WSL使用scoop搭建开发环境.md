@@ -1,7 +1,6 @@
 ---
 title: "抛弃 WSL2 使用 scoop 搭建开发环境"
 tags:
-  - "WSL"
   - "Windows"
 slug: u5b5f4n8
 date: 2024-04-25T12:27:00+08:00
