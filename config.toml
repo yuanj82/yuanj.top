@@ -2,7 +2,7 @@ baseurl = "https://yuanj.top"
 title = "yuanj's blog"
 languageCode = "en-us"
 paginate = "10"                          # 每页的文章数量
-theme = ["hugo-search-fuse-js", "cloud"]
+theme = ["cloud"]
 
 [Params]
   post_meta = ["date"]
@@ -22,9 +22,6 @@ theme = ["hugo-search-fuse-js", "cloud"]
   [[Params.widgets.misc.custom]]  # MISC栏可以定义多个页面或url，页面应新建于content目录下
     title = "README"
     url = "/readme"
-  [[Params.widgets.misc.custom]]
-    title = "Search"
-    url = "/search"
   [[Params.widgets.misc.custom]]
     title = "Publications"
     url = "/publications"
