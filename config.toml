@@ -23,6 +23,9 @@ theme = ["cloud"]
     title = "README"
     url = "/readme"
   [[Params.widgets.misc.custom]]
+    title = "Moments"
+    url = "/moments"
+  [[Params.widgets.misc.custom]]
     title = "Publications"
     url = "/publications"
   [[Params.widgets.misc.custom]]
