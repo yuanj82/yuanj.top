@@ -20,8 +20,6 @@ WSL1 是最初发行的版本，但是比较鸡肋，I/O 性能很差，并且�
 
 WSL2 是 WSL1 的升级版，提供了更好的文件系统性能和更完全的 Linux 系统内核支持，WSL2 使用虚拟化技术在轻量级虚拟机 (VM) 中运行 Linux 内核，同时保留了 WSL1 的操作体验，可以把通过 WSL2 启动的 Linux 系统认为是虚拟机中的一个 Linux 系统，因此，相对于通过用户模式和内核模式组件构成兼容性底层来运行 Linux 的 WSL1 来说，WSL2 的 Linux 系统更完整，功能更完善。例如，WSL1 不支持 Docker，而 WSL2 可以以原生的方式运行 Docker
 
-更多关于 Linux 的内容参考此文章 [《什么是 Linux？它和 Windows 有什么区别呢？》](https://www.hieroglyphs.top/linux/20230317/)
-
 ## 检查 Windows 版本
 
 打开 Windows 设置——系统——关于——操作系统内部版本
@@ -105,4 +103,4 @@ apt list --upgradeable
 sudo apt autoremove
 ```
 
-关于 conda 的安装可以参考此文章 [《Linux 下安装 conda》](https://www.hieroglyphs.top/2023/05/01/linux/20230501/)
+关于 conda 的安装可以参考此文章 [《Linux 下安装 conda》](https://www.yuanj.top/2023/05/01/linux/20230501/)

@@ -30,7 +30,7 @@ slug: jdksf7d9
 
 ## WSL 的安装
 
-参考我的文章 [Windows10 & 11 安装 WSL2](https://www.hieroglyphs.top/posts/309de741/)
+参考我的文章 [Windows10 & 11 安装 WSL2](https://www.yuanj.top/posts/309de741/)
 
 ## WSL 的配置
 
@@ -62,7 +62,7 @@ sudo apt-get install git
 
 **conda**
 
-参考文章 [Linux 下安装 conda](https://www.hieroglyphs.top/posts/1d0dd329/)
+参考文章 [Linux 下安装 conda](https://www.yuanj.top/posts/1d0dd329/)
 
 **oh-my-zsh**
 
@@ -96,7 +96,7 @@ sudo apt-get install neofetch
 
 **其他**
 
-[Linux 下安装 BUSCO](https://www.hieroglyphs.top/posts/24ed802/)
+[Linux 下安装 BUSCO](https://www.yuanj.top/posts/24ed802/)
 
 ### 连接 VScode
 

@@ -40,7 +40,7 @@ Linux 系统环境、HMMER 软件、pfam 网站（http://pfam-legacy.xfam.org/�
 
 ## 安装 HMMER
 
-在 Linux 系统环境下，推荐使用 conda 安装 HMMER，conda 的安装配置教程请参照此文章 [《Linux 下安装 conda》](https://www.hieroglyphs.top/2023/05/01/linux2/)
+在 Linux 系统环境下，推荐使用 conda 安装 HMMER，conda 的安装配置教程请参照此文章 [《Linux 下安装 conda》](https://yuanj.top/posts/z9w5y9m7/)
 
 ```
 #创建 Python3.7 的虚拟环境

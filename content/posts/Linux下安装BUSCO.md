@@ -29,7 +29,7 @@ date: 2023-07-21 17:22:17
 
 ## 安装 conda
 
-conda 的安装参考 [Linux 下安装 conda](https://www.hieroglyphs.top/posts/1d0dd329/)
+conda 的安装参考 [Linux 下安装 conda](https://www.yuanj.top/posts/1d0dd329/)
 
 ## 安装所需依赖
 
