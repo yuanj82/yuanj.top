@@ -64,7 +64,6 @@ scoop install windows-terminal
 官方的 buckets 里面只有少数的软件，而我们要想安装其它国人日常使用的软件就需要添加几个 buckets：
 
 ```bash
-scoop bucket add scoopet https://github.com/ivaquero/scoopet
 scoop bucket add lemon https://github.com/hoilc/scoop-lemon
 scoop bucket add dorado https://github.com/chawyehsu/dorado
 ```
