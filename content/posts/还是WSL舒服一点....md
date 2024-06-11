@@ -28,6 +28,27 @@ scoop 整体感觉是不错的，但是还有一些问题：
 sudo pacman -S cmake gdal geos proj gcc-fortran
 ```
 
+pymol 还需要安装 qt：
+
+```bash
+sudo pacman -S qt5-base python-pyqt5  
+```
+
+图形界面有点问题，需要修复一下：
+
+```bash
+sudo rm -r /tmp/.X11-unix
+ln -s /mnt/wslg/.X11-unix /tmp/.X11-unix
+```
+
+再在 .zshrc 写入：
+
+```bash
+export LIBGL_ALWAYS_INDIRECT=1
+```
+
+`source ~/.zshrc`即可。
+
 本想不用 aur 的，后来发现有俩包还真就只能用 aur🤣也就只能用上了，R 包 colormap 这种需要 V8 库，之前在 Debian 上一条命令`sudo apt install libv8-dev`立马就装好了，但是 Arch 上只能从 aur 下载，然后编译了将近两个小时 ...
 
 ```bash
@@ -37,7 +58,7 @@ yay -S v8-r
 
 换上 WSL2 之后一切都舒服了~
 
-以前还会在 .wslconfig 限制 WSL2 所能调用的内存和核心
+以前还会在 .wslconfig 限制 WSL2 所能调用的内存和核心：
 
 ```txt
 [wsl2]
@@ -51,8 +72,10 @@ sparseVhd=true
 autoMemoryReclaim=dropcache
 ```
 
-但是现在发现好像不需要了，最新版的 WSL2 据说可以自动回收内存了，我也感受到了，在经历了编译时占用 CPU98%和 15GB 内存后，编译结束 CPU 立刻降下去了，内存也降到 4GB 一直停着了，也算是可以了。
+但是现在发现好像不需要了，最新版的 WSL2 据说可以自动回收内存了，我也感受到了，在经历了编译时占用 CPU 98%和 15 GB 内存后，编译结束 CPU 立刻降下去了，内存也降到 4GB 一直停着了，也算是可以了。
 
 ![](https://images.yuanj.top/202406111650829.png)
 
-WSL2 主要还可以用 pymol、gromacs、deeptools 等等的软件，Windows 就不行，超算又不方便，所以自己的还是好一些。于是一切又熟悉又舒适了，游戏也删掉了~ 至于性能损失，损失就损失了吧 ... 
+WSL2 主要还可以用 pymol、gromacs、deeptools 等等的软件，Windows 就不行，超算又不方便，所以自己的还是好一些。于是一切又熟悉又舒适了，游戏也删掉了~ 至于性能损失，损失就损失了吧 ...
+
+跑了一下 acATAC-seq 流程，占用大概稳定在 13GB 左右，我的内存是 32GB 的，总体还是不错的。
