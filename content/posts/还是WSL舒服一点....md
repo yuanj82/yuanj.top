@@ -31,7 +31,7 @@ sudo pacman -S cmake gdal geos proj gcc-fortran
 pymol 还需要安装 qt：
 
 ```bash
-sudo pacman -S qt5-base python-pyqt5  
+sudo pacman -S qt5-base python-pyqt5 xorg
 ```
 
 图形界面有点问题，需要修复一下：
