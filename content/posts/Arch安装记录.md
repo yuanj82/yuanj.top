@@ -324,7 +324,7 @@ sudo systemctl enable --now NetworkManager
 我比较喜欢用 cinnamon 桌面+lightdm 管理器，英伟达显卡下 wayland 配置麻烦，索性用 X11：
 
 ```bash
-sudo pacman -S cinnamon gnome-terminal xorg lightdm lightdm-gtk-greeter
+sudo pacman -S cinnamon gnome-terminal xorg lightdm
 ```
 
 添加 lightdm 守护进程并进入桌面环境：
@@ -377,7 +377,7 @@ sudo pacman-key --lsign-key "farseerfc@archlinux.org"
 sudo pacman -S noto-fonts-cjk adobe-source-han-serif-cn-fonts wqy-zenhei noto-fonts noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
 ```
 
-还可以通过 aurWindows 字体：
+~~还可以通过 aur 安装 Windows 字体：~~ 更推荐直接 copyWindows 的字体，把 ttf 和 ttc 的所有字体复制到 Linux 字体目录就够了。
 
 ```bash
 yay -S ttf-ms-win11-auto
@@ -423,7 +423,7 @@ sudo pacman -S fcitx5-rime # rime 输入法
 sudo pacman -S fcitx5-material-color # 输入法主题
 ```
 
-使用 [rime-auto-deploy](https://github.com/Mark24Code/rime-auto-deploy) 脚本来自动配置 rime。
+使用 rime 的 [雾凇拼音](https://aur.archlinux.org/packages/rime-ice-pinyin-git)。
 
 设置环境变量：
 
@@ -443,9 +443,11 @@ GLFW_IM_MODULE=ibus
 
 ## 界面美化
 
-GTK 主题使用`vimix-gtk-themes`，图片使用`papirus-icon-theme`，都使用 yay 来安装。
+GTK 主题使用`vimix-gtk-themes 和 matcha-gtk-theme`，图标使用`papirus-icon-theme`，都使用 yay 来安装。
 
-lightdm 使用`lightdm-gtk-greeter-settings`来进行美化。
+lightdm 的 greeter 用 linuxmint 的`lightdm-slick-greeter`，`lightdm-settings`进行配置。
+
+这里 lightdm 需要改一下默认的 greeter，参见 [wiki](https://wiki.archlinuxcn.org/wiki/LightDM#Greeter)
 
 ## 基础功能软件
 
@@ -467,7 +469,7 @@ lightdm 使用`lightdm-gtk-greeter-settings`来进行美化。
 ## 日常软件
 
 - ohmyzsh 增强 zsh [清华镜像](https://mirrors.tuna.tsinghua.edu.cn/help/ohmyzsh.git/)
-- firefox 火狐浏览器
+- google-chrome Chrome 浏览器`aur`
 - wemeet-bin 腾讯会议`aur`
 - linuxqq QQ`aur`
 - wps-office-cn wps-office-mui-zh-cn ttf-wps-fonts WPS 国内版及字体和符号支持`aur`
@@ -476,7 +478,7 @@ lightdm 使用`lightdm-gtk-greeter-settings`来进行美化。
 - visual-studio-code-bin 代码编辑器`aur`
 - rstudio-desktop-bin Rstudio`aur`
 - piclist-bin 图床工具`aur`
-- wechat-universal-bwrap 微信`aur`
+- wechat-uos-qt 微信`aur`
 - mambaforge 更快的 conda 包管理器`aur`
 - timeshift 系统快照
 
