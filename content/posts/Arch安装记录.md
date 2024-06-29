@@ -414,6 +414,35 @@ sudo vim /etc/fonts/conf.d/64-language-selector-prefer.conf
 </fontconfig>
 ```
 
+---
+
+20240629 更新：系统改为默认使用鸿蒙字体，所以字体优先级修改为：
+
+```xml
+<?xml version="1.0"?>
+<!DOCTYPE fontconfig SYSTEM "fonts.dtd">
+<fontconfig>
+  <alias>
+    <family>sans-serif</family>
+    <prefer>
+      <family>HarmonyOS Sans SC</family>
+      <family>HarmonyOS Sans TC</family>
+      <family>HarmonyOS Sans JP</family>
+    </prefer>
+  </alias>
+  <alias>
+    <family>monospace</family>
+    <prefer>
+      <family>Noto Sans Mono CJK SC</family>
+      <family>Noto Sans Mono CJK TC</family>
+      <family>Noto Sans Mono CJK JP</family>
+    </prefer>
+  </alias>
+</fontconfig>
+```
+
+鸿蒙字体的包是`ttf-harmonyos-sans` `aur`。
+
 ## 中文输入法
 
 ```bash
@@ -443,11 +472,13 @@ GLFW_IM_MODULE=ibus
 
 ## 界面美化
 
-GTK 主题使用`vimix-gtk-themes 和 matcha-gtk-theme`，图标使用`papirus-icon-theme`，都使用 yay 来安装。
+GTK 主题使用`vimix-gtk-themes` 和 `matcha-gtk-theme`，图标使用`papirus-icon-theme`，都使用 yay 来安装。
 
 lightdm 的 greeter 用 linuxmint 的`lightdm-slick-greeter`，`lightdm-settings`进行配置。
 
 这里 lightdm 需要改一下默认的 greeter，参见 [wiki](https://wiki.archlinuxcn.org/wiki/LightDM#Greeter)
+
+20240629 更新：鼠标光标用 Windows10 的，aur 包为`windows-10-cursor`，总感觉 Linux 下其他的光标怪怪的 ...
 
 ## 基础功能软件
 
