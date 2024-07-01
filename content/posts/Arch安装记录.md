@@ -483,11 +483,11 @@ lightdm 的 greeter 用 linuxmint 的`lightdm-slick-greeter`，`lightdm-settings
 ## 基础功能软件
 
 - numlockx 使 lightdm 开机默认打开数字键盘 [Lightdm Wiki](https://wiki.archlinuxcn.org/wiki/LightDM#%E9%BB%98%E8%AE%A4%E6%89%93%E5%BC%80%E5%B0%8F%E9%94%AE%E7%9B%98)
-- neofetch 系统信息查看
+- fastfetch 系统信息查看
 - zsh 更好用的 shell
 - yay aur 助手
 - ntfs-3g 识别 NTFS 硬盘
-- gthumb 图片查看器
+- nomacs 图片查看器
 - xed 文本编辑器
 - xarchiver 图形化解压缩软件
 - p7zip 命令行解压缩软件
