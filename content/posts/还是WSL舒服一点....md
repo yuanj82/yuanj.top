@@ -1,5 +1,5 @@
 ---
-title: 还是 WSL 舒服一点。..
+title: 还是 WSL 舒服一点 ...
 tags:
   - "Windows"
   - "Linux"

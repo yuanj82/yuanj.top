@@ -163,7 +163,7 @@ except ZeroDivisionError as e:
 except ValueError as e:
     print("输入的数字是无效数字，异常：{}".format(e))
 finally:
-    print("资源释放。..")
+    print("资源释放 ...")
 ```
 
 ```python
@@ -180,7 +180,7 @@ try:
 except ValueError as e2:
     print("输入的数字是无效数字，异常：{}".format(e2))
 finally:
-    print("资源释放。..")
+    print("资源释放 ...")
 ```
 
 ```python
@@ -201,7 +201,7 @@ except ZeroDivisionError as e:
 except ValueError as e:
     raise ChufaException('输入的是无效数字')
 finally:
-    print("资源释放。..")
+    print("资源释放 ...")
 ```
 
 ## 数学计算模块
